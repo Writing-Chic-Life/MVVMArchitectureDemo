@@ -3,12 +3,84 @@
 
 target 'MVVMArchitectureDemo' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
- use_frameworks!
+  # use_frameworks!
 
   # Pods for MVVMArchitectureDemo
 pod 'AFNetworking'
-pod 'Masonry'
-pod 'ReactiveCocoa'
+    # AutoLayout
+    pod 'Masonry'
+    # 字典转模型 该项目使用YYModel
+    pod 'MJExtension'
+    pod 'MJRefresh'
+    # 消息链
+    #pod 'ReactiveCocoa', '2.5.0'
+    pod 'ReactiveObjC'
+    #pod 'ReactiveCocoa', :git => 'https://github.com/zhao0/ReactiveCocoa.git', :tag => '2.5.2'
+    #########  YYKit ###############
+#    pod 'YYKit'
+    # YYKit 的一套分类
+    pod 'YYCategories'
+    # 富文本
+    pod 'YYText'
+    # 字典转模型
+    pod 'YYModel'
+    # YYImage
+    pod 'YYImage'
+    # webP
+    pod 'YYImage/WebP'
+    # 高性能的 iOS 缓存框架
+    pod 'YYCache'
+    # 高性能的 iOS 异步图像加载框架。
+    pod 'YYWebImage'
+    # iOS 键盘监听管理工具
+    pod 'YYKeyboardManager'
+    # iOS 全局并发队列管理工具
+    pod 'YYDispatchQueuePool'
+    # iOS 异步绘制与显示的工具
+    pod 'YYAsyncLayer'
+
+    # FaceBook KVO（优雅的代替系统原生的KVO)
+    pod 'KVOController'
+    # HUD
+    pod 'MBProgressHUD'
+    pod 'SVProgressHUD'
+    # 钥匙串存储
+    pod 'SAMKeychain'
+    # 颜色分类
+    pod 'Colours'
+    # 图片缓存
+    pod 'SDWebImage'
+    # 环形进度条
+    pod 'DACircularProgress'
+    # pop动画
+    pod 'pop'
+    # UI block
+    pod 'BlocksKit'
+    # 键盘管理
+    pod 'IQKeyboardManager'
+    # 缓存tableViewCell的高度
+    pod 'UITableView+FDTemplateLayoutCell'
+    # IB View自动收缩
+    # pod 'UIView+FDCollapsibleConstraints'
+    # 侧滑手势
+    pod 'FDFullscreenPopGesture'
+    # 加密
+    pod 'CocoaSecurity'
+    # 状态栏通知
+    pod 'JDStatusBarNotification'
+
+    pod 'LCActionSheet'
+
+    pod 'TZImagePickerController'
+
+    pod 'IDMPhotoBrowser'
+    
+    # view的圆角处理 避免离屏渲染
+    # pod 'JMRoundedCorner'                   , '1.2.1'
+#    pod 'HYBImageCliped'                    , '2.2.4'
+pod 'ZYCornerRadius'                   # , '1.0.2'
+#    pod 'HJCornerRadius', :git => 'https://github.com/panghaijiao/HJCornerRadius.git'
+
   target 'MVVMArchitectureDemoTests' do
     inherit! :search_paths
     # Pods for testing
