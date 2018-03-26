@@ -110,6 +110,27 @@
 		197DC4652068ED94002131F0 /* YYRCommonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC4642068ED94002131F0 /* YYRCommonTableViewController.m */; };
 		197DC4682068EF4D002131F0 /* YYRCommonTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC4672068EF4D002131F0 /* YYRCommonTableViewModel.m */; };
 		197DC46B2068EFD4002131F0 /* YYRSegmentedControlController.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC46A2068EFD4002131F0 /* YYRSegmentedControlController.m */; };
+		197DC4712068FA62002131F0 /* NSArray+YYRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC46E2068FA61002131F0 /* NSArray+YYRAddition.m */; };
+		197DC4722068FA62002131F0 /* NSNull+NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC4702068FA62002131F0 /* NSNull+NullSafe.m */; };
+		197DC4752068FA8D002131F0 /* NSAttributedString+YYRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC4742068FA8D002131F0 /* NSAttributedString+YYRAddition.m */; };
+		197DC4782068FAC8002131F0 /* NSBundle+YYRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC4772068FAC8002131F0 /* NSBundle+YYRAddition.m */; };
+		197DC47D2068FB0A002131F0 /* NSDate+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC4792068FB09002131F0 /* NSDate+Extend.m */; };
+		197DC47E2068FB0A002131F0 /* NSDate+YYRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC47B2068FB0A002131F0 /* NSDate+YYRAddition.m */; };
+		197DC4832068FB45002131F0 /* NSString+YYRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC47F2068FB44002131F0 /* NSString+YYRAddition.m */; };
+		197DC4842068FB45002131F0 /* NSString+safeSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC4822068FB45002131F0 /* NSString+safeSetter.m */; };
+		197DC4882068FB8F002131F0 /* UIButton+YYRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC4872068FB8F002131F0 /* UIButton+YYRAddition.m */; };
+		197DC48C2068FBC9002131F0 /* UIColor+YYRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC48A2068FBC9002131F0 /* UIColor+YYRAddition.m */; };
+		197DC48F2068FCE7002131F0 /* UIView+YYRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC48E2068FCE7002131F0 /* UIView+YYRAddition.m */; };
+		197DC4922068FD01002131F0 /* UILabel+ChangeLineSpaceAndWordSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC4912068FD00002131F0 /* UILabel+ChangeLineSpaceAndWordSpace.m */; };
+		197DC4952068FD32002131F0 /* UIScreen+YYRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC4942068FD31002131F0 /* UIScreen+YYRAddition.m */; };
+		197DC4982068FD8B002131F0 /* NSString+Regular.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC4972068FD8B002131F0 /* NSString+Regular.m */; };
+		197DC49B2068FDDA002131F0 /* UIAlertController+Dismiss.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC4992068FDDA002131F0 /* UIAlertController+Dismiss.m */; };
+		197DC4A22068FDF0002131F0 /* UIViewController+Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC49E2068FDF0002131F0 /* UIViewController+Alert.m */; };
+		197DC4A32068FDF0002131F0 /* UITableViewCell+Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC4A02068FDF0002131F0 /* UITableViewCell+Alert.m */; };
+		197DC4A42068FDF0002131F0 /* UIViewController+CurrentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC4A12068FDF0002131F0 /* UIViewController+CurrentViewController.m */; };
+		197DC4A72068FE03002131F0 /* UIViewController+PrivacyAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC4A52068FE03002131F0 /* UIViewController+PrivacyAlert.m */; };
+		197DC4AB2068FF5F002131F0 /* NSObject+YYRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC4A92068FF5E002131F0 /* NSObject+YYRAddition.m */; };
+		197DC4AC2068FF5F002131F0 /* UITableViewCell+Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC4AA2068FF5E002131F0 /* UITableViewCell+Alert.m */; };
 		6DD87315EDC291745613AB01 /* libPods-MVVMArchitectureDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65859389699B527633BF67C7 /* libPods-MVVMArchitectureDemoUITests.a */; };
 		ECC1AB43200FBEA9912CE088 /* libPods-MVVMArchitectureDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0053E11E54A667265E0D271 /* libPods-MVVMArchitectureDemoTests.a */; };
 /* End PBXBuildFile section */
@@ -349,6 +370,47 @@
 		197DC4672068EF4D002131F0 /* YYRCommonTableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRCommonTableViewModel.m; sourceTree = "<group>"; };
 		197DC4692068EFD4002131F0 /* YYRSegmentedControlController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRSegmentedControlController.h; sourceTree = "<group>"; };
 		197DC46A2068EFD4002131F0 /* YYRSegmentedControlController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRSegmentedControlController.m; sourceTree = "<group>"; };
+		197DC46D2068FA61002131F0 /* NSNull+NullSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+NullSafe.h"; sourceTree = "<group>"; };
+		197DC46E2068FA61002131F0 /* NSArray+YYRAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+YYRAddition.m"; sourceTree = "<group>"; };
+		197DC46F2068FA61002131F0 /* NSArray+YYRAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+YYRAddition.h"; sourceTree = "<group>"; };
+		197DC4702068FA62002131F0 /* NSNull+NullSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+NullSafe.m"; sourceTree = "<group>"; };
+		197DC4732068FA8D002131F0 /* NSAttributedString+YYRAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+YYRAddition.h"; sourceTree = "<group>"; };
+		197DC4742068FA8D002131F0 /* NSAttributedString+YYRAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+YYRAddition.m"; sourceTree = "<group>"; };
+		197DC4762068FAC8002131F0 /* NSBundle+YYRAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+YYRAddition.h"; sourceTree = "<group>"; };
+		197DC4772068FAC8002131F0 /* NSBundle+YYRAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+YYRAddition.m"; sourceTree = "<group>"; };
+		197DC4792068FB09002131F0 /* NSDate+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extend.m"; sourceTree = "<group>"; };
+		197DC47A2068FB0A002131F0 /* NSDate+YYRAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+YYRAddition.h"; sourceTree = "<group>"; };
+		197DC47B2068FB0A002131F0 /* NSDate+YYRAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+YYRAddition.m"; sourceTree = "<group>"; };
+		197DC47C2068FB0A002131F0 /* NSDate+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extend.h"; sourceTree = "<group>"; };
+		197DC47F2068FB44002131F0 /* NSString+YYRAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YYRAddition.m"; sourceTree = "<group>"; };
+		197DC4802068FB44002131F0 /* NSString+YYRAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YYRAddition.h"; sourceTree = "<group>"; };
+		197DC4812068FB45002131F0 /* NSString+safeSetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+safeSetter.h"; sourceTree = "<group>"; };
+		197DC4822068FB45002131F0 /* NSString+safeSetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+safeSetter.m"; sourceTree = "<group>"; };
+		197DC4862068FB8F002131F0 /* UIButton+YYRAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+YYRAddition.h"; sourceTree = "<group>"; };
+		197DC4872068FB8F002131F0 /* UIButton+YYRAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+YYRAddition.m"; sourceTree = "<group>"; };
+		197DC48A2068FBC9002131F0 /* UIColor+YYRAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YYRAddition.m"; sourceTree = "<group>"; };
+		197DC48B2068FBC9002131F0 /* UIColor+YYRAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YYRAddition.h"; sourceTree = "<group>"; };
+		197DC48D2068FCE7002131F0 /* UIView+YYRAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YYRAddition.h"; sourceTree = "<group>"; };
+		197DC48E2068FCE7002131F0 /* UIView+YYRAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YYRAddition.m"; sourceTree = "<group>"; };
+		197DC4902068FD00002131F0 /* UILabel+ChangeLineSpaceAndWordSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+ChangeLineSpaceAndWordSpace.h"; sourceTree = "<group>"; };
+		197DC4912068FD00002131F0 /* UILabel+ChangeLineSpaceAndWordSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ChangeLineSpaceAndWordSpace.m"; sourceTree = "<group>"; };
+		197DC4932068FD31002131F0 /* UIScreen+YYRAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+YYRAddition.h"; sourceTree = "<group>"; };
+		197DC4942068FD31002131F0 /* UIScreen+YYRAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+YYRAddition.m"; sourceTree = "<group>"; };
+		197DC4962068FD8A002131F0 /* NSString+Regular.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Regular.h"; sourceTree = "<group>"; };
+		197DC4972068FD8B002131F0 /* NSString+Regular.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Regular.m"; sourceTree = "<group>"; };
+		197DC4992068FDDA002131F0 /* UIAlertController+Dismiss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Dismiss.m"; sourceTree = "<group>"; };
+		197DC49A2068FDDA002131F0 /* UIAlertController+Dismiss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Dismiss.h"; sourceTree = "<group>"; };
+		197DC49C2068FDEF002131F0 /* UIViewController+Alert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Alert.h"; sourceTree = "<group>"; };
+		197DC49D2068FDF0002131F0 /* UIViewController+CurrentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CurrentViewController.h"; sourceTree = "<group>"; };
+		197DC49E2068FDF0002131F0 /* UIViewController+Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Alert.m"; sourceTree = "<group>"; };
+		197DC49F2068FDF0002131F0 /* UITableViewCell+Alert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Alert.h"; sourceTree = "<group>"; };
+		197DC4A02068FDF0002131F0 /* UITableViewCell+Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Alert.m"; sourceTree = "<group>"; };
+		197DC4A12068FDF0002131F0 /* UIViewController+CurrentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CurrentViewController.m"; sourceTree = "<group>"; };
+		197DC4A52068FE03002131F0 /* UIViewController+PrivacyAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PrivacyAlert.m"; sourceTree = "<group>"; };
+		197DC4A62068FE03002131F0 /* UIViewController+PrivacyAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PrivacyAlert.h"; sourceTree = "<group>"; };
+		197DC4A82068FF5E002131F0 /* NSObject+YYRAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYRAddition.h"; sourceTree = "<group>"; };
+		197DC4A92068FF5E002131F0 /* NSObject+YYRAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYRAddition.m"; sourceTree = "<group>"; };
+		197DC4AA2068FF5E002131F0 /* UITableViewCell+Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+Alert.m"; path = "../../../../../../ios/SISSAPP/APP/Tools/Category/UITableViewCell+Alert.m"; sourceTree = "<group>"; };
 		37637F704CE77010EE5B6094 /* libPods-MVVMArchitectureDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVMArchitectureDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65859389699B527633BF67C7 /* libPods-MVVMArchitectureDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVMArchitectureDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		671819D567377139850F0F36 /* Pods-MVVMArchitectureDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMArchitectureDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMArchitectureDemo/Pods-MVVMArchitectureDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -494,6 +556,7 @@
 			isa = PBXGroup;
 			children = (
 				197DC30F2068CFE9002131F0 /* Category */,
+				197DC35A2068CFEA002131F0 /* YYRExtension.h */,
 				197DC35B2068CFEA002131F0 /* Helper */,
 				197DC3622068CFEA002131F0 /* Manager */,
 				197DC3732068CFEA002131F0 /* Protocol */,
@@ -518,6 +581,8 @@
 				197DC32C2068CFE9002131F0 /* NSString */,
 				197DC3362068CFEA002131F0 /* UIAlertController */,
 				197DC3392068CFEA002131F0 /* UIBarButtonItem */,
+				197DC4852068FB75002131F0 /* UIButton */,
+				197DC4892068FBBA002131F0 /* UIColor */,
 				197DC33C2068CFEA002131F0 /* UIFont */,
 				197DC33F2068CFEA002131F0 /* UIImage */,
 				197DC3422068CFEA002131F0 /* UILabel */,
@@ -527,7 +592,7 @@
 				197DC34E2068CFEA002131F0 /* UITextField */,
 				197DC3512068CFEA002131F0 /* UITextView */,
 				197DC3542068CFEA002131F0 /* UIView */,
-				197DC35A2068CFEA002131F0 /* YYRExtension.h */,
+				197DC46C2068FA49002131F0 /* Other */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -575,6 +640,10 @@
 				197DC31E2068CFE9002131F0 /* NSDate+YYRExtension.m */,
 				197DC31F2068CFE9002131F0 /* NSDateFormatter+YYRExtension.h */,
 				197DC3202068CFE9002131F0 /* NSDateFormatter+YYRExtension.m */,
+				197DC47C2068FB0A002131F0 /* NSDate+Extend.h */,
+				197DC4792068FB09002131F0 /* NSDate+Extend.m */,
+				197DC47A2068FB0A002131F0 /* NSDate+YYRAddition.h */,
+				197DC47B2068FB0A002131F0 /* NSDate+YYRAddition.m */,
 			);
 			path = NSDate;
 			sourceTree = "<group>";
@@ -607,6 +676,8 @@
 			children = (
 				197DC32D2068CFE9002131F0 /* NSAttributedString+YYRSize.h */,
 				197DC32E2068CFE9002131F0 /* NSAttributedString+YYRSize.m */,
+				197DC4732068FA8D002131F0 /* NSAttributedString+YYRAddition.h */,
+				197DC4742068FA8D002131F0 /* NSAttributedString+YYRAddition.m */,
 				197DC32F2068CFE9002131F0 /* NSString+YYR.h */,
 				197DC3302068CFE9002131F0 /* NSString+YYRExtension.h */,
 				197DC3312068CFE9002131F0 /* NSString+YYRExtension.m */,
@@ -614,6 +685,12 @@
 				197DC3332068CFEA002131F0 /* NSString+YYRSize.m */,
 				197DC3342068CFEA002131F0 /* NSString+YYRValid.h */,
 				197DC3352068CFEA002131F0 /* NSString+YYRValid.m */,
+				197DC4812068FB45002131F0 /* NSString+safeSetter.h */,
+				197DC4822068FB45002131F0 /* NSString+safeSetter.m */,
+				197DC4802068FB44002131F0 /* NSString+YYRAddition.h */,
+				197DC47F2068FB44002131F0 /* NSString+YYRAddition.m */,
+				197DC4962068FD8A002131F0 /* NSString+Regular.h */,
+				197DC4972068FD8B002131F0 /* NSString+Regular.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -623,6 +700,8 @@
 			children = (
 				197DC3372068CFEA002131F0 /* UIAlertController+YYRColor.h */,
 				197DC3382068CFEA002131F0 /* UIAlertController+YYRColor.m */,
+				197DC49A2068FDDA002131F0 /* UIAlertController+Dismiss.h */,
+				197DC4992068FDDA002131F0 /* UIAlertController+Dismiss.m */,
 			);
 			path = UIAlertController;
 			sourceTree = "<group>";
@@ -659,6 +738,8 @@
 			children = (
 				197DC3432068CFEA002131F0 /* UILabel+YYRExtension.h */,
 				197DC3442068CFEA002131F0 /* UILabel+YYRExtension.m */,
+				197DC4902068FD00002131F0 /* UILabel+ChangeLineSpaceAndWordSpace.h */,
+				197DC4912068FD00002131F0 /* UILabel+ChangeLineSpaceAndWordSpace.m */,
 			);
 			path = UILabel;
 			sourceTree = "<group>";
@@ -716,6 +797,8 @@
 				197DC3572068CFEA002131F0 /* UIView+YYRExtension.m */,
 				197DC3582068CFEA002131F0 /* UIView+YYRFrame.h */,
 				197DC3592068CFEA002131F0 /* UIView+YYRFrame.m */,
+				197DC48D2068FCE7002131F0 /* UIView+YYRAddition.h */,
+				197DC48E2068FCE7002131F0 /* UIView+YYRAddition.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -1059,6 +1142,50 @@
 			path = TableViewCell;
 			sourceTree = "<group>";
 		};
+		197DC46C2068FA49002131F0 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				197DC46F2068FA61002131F0 /* NSArray+YYRAddition.h */,
+				197DC46E2068FA61002131F0 /* NSArray+YYRAddition.m */,
+				197DC4A82068FF5E002131F0 /* NSObject+YYRAddition.h */,
+				197DC4A92068FF5E002131F0 /* NSObject+YYRAddition.m */,
+				197DC4AA2068FF5E002131F0 /* UITableViewCell+Alert.m */,
+				197DC46D2068FA61002131F0 /* NSNull+NullSafe.h */,
+				197DC4702068FA62002131F0 /* NSNull+NullSafe.m */,
+				197DC4762068FAC8002131F0 /* NSBundle+YYRAddition.h */,
+				197DC4772068FAC8002131F0 /* NSBundle+YYRAddition.m */,
+				197DC4932068FD31002131F0 /* UIScreen+YYRAddition.h */,
+				197DC4942068FD31002131F0 /* UIScreen+YYRAddition.m */,
+				197DC49F2068FDF0002131F0 /* UITableViewCell+Alert.h */,
+				197DC4A02068FDF0002131F0 /* UITableViewCell+Alert.m */,
+				197DC49C2068FDEF002131F0 /* UIViewController+Alert.h */,
+				197DC49E2068FDF0002131F0 /* UIViewController+Alert.m */,
+				197DC49D2068FDF0002131F0 /* UIViewController+CurrentViewController.h */,
+				197DC4A12068FDF0002131F0 /* UIViewController+CurrentViewController.m */,
+				197DC4A62068FE03002131F0 /* UIViewController+PrivacyAlert.h */,
+				197DC4A52068FE03002131F0 /* UIViewController+PrivacyAlert.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		197DC4852068FB75002131F0 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				197DC4862068FB8F002131F0 /* UIButton+YYRAddition.h */,
+				197DC4872068FB8F002131F0 /* UIButton+YYRAddition.m */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		197DC4892068FBBA002131F0 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				197DC48B2068FBC9002131F0 /* UIColor+YYRAddition.h */,
+				197DC48A2068FBC9002131F0 /* UIColor+YYRAddition.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
 		DC0EADBFCD68D5EE550B53B0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1384,6 +1511,7 @@
 				197DC3FE2068D010002131F0 /* YYRNavigationController.m in Sources */,
 				197DC3F92068D010002131F0 /* YYRImageView.m in Sources */,
 				197DC4112068D7B7002131F0 /* YYRTableViewModel.m in Sources */,
+				197DC4A32068FDF0002131F0 /* UITableViewCell+Alert.m in Sources */,
 				197DC3F82068D010002131F0 /* YYRButton.m in Sources */,
 				197DC4392068E183002131F0 /* YYWeakProxy.m in Sources */,
 				197DC3C32068CFEA002131F0 /* YYREmoticonGroup.m in Sources */,
@@ -1393,23 +1521,30 @@
 				197DC3B42068CFEA002131F0 /* UIFont+YYRExtension.m in Sources */,
 				197DC3A82068CFEA002131F0 /* NSDate+YYRExtension.m in Sources */,
 				197DC3A62068CFEA002131F0 /* MBProgressHUD+YYRExtension.m in Sources */,
+				197DC4A42068FDF0002131F0 /* UIViewController+CurrentViewController.m in Sources */,
 				197DC3BE2068CFEA002131F0 /* YYRControllerHelper.m in Sources */,
 				197DC4382068E183002131F0 /* YYTimer.m in Sources */,
 				197DC3FD2068D010002131F0 /* YYRTextField.m in Sources */,
+				197DC47E2068FB0A002131F0 /* NSDate+YYRAddition.m in Sources */,
 				197DC3B02068CFEA002131F0 /* NSString+YYRSize.m in Sources */,
 				197DC3D02068CFEA002131F0 /* SAMKeychain+YYRUtil.m in Sources */,
+				197DC4952068FD32002131F0 /* UIScreen+YYRAddition.m in Sources */,
+				197DC4882068FB8F002131F0 /* UIButton+YYRAddition.m in Sources */,
 				197DC3B12068CFEA002131F0 /* NSString+YYRValid.m in Sources */,
 				197DC3FF2068D010002131F0 /* YYRNavigationControllerStack.m in Sources */,
 				197DC3AD2068CFEA002131F0 /* NSObject+YYRExtension.m in Sources */,
 				197DC45C2068EAB7002131F0 /* YYRCommonHeaderView.m in Sources */,
+				197DC48F2068FCE7002131F0 /* UIView+YYRAddition.m in Sources */,
 				197DC3FB2068D010002131F0 /* YYRTabBar.m in Sources */,
 				197DC3B62068CFEA002131F0 /* UILabel+YYRExtension.m in Sources */,
 				197DC3C42068CFEA002131F0 /* YYREmoticonManager.m in Sources */,
 				197DC41D2068D941002131F0 /* YYRControl.m in Sources */,
 				197DC3CE2068CFEA002131F0 /* YYRURLParameters.m in Sources */,
 				197DC43C2068E4D8002131F0 /* YYRCommonTableViewCell.m in Sources */,
+				197DC4782068FAC8002131F0 /* NSBundle+YYRAddition.m in Sources */,
 				197DC3CC2068CFEA002131F0 /* YYRHTTPRequest.m in Sources */,
 				197DC4142068D824002131F0 /* YYRWebViewModel.m in Sources */,
+				197DC4AB2068FF5F002131F0 /* NSObject+YYRAddition.m in Sources */,
 				197DC4012068D010002131F0 /* YYRViewController.m in Sources */,
 				197DC44D2068E6F7002131F0 /* YYRCommonAvatarItemViewModel.m in Sources */,
 				197DC45F2068EB2D002131F0 /* YYRCommonFooterView.m in Sources */,
@@ -1422,6 +1557,8 @@
 				197DC3A52068CFEA002131F0 /* LCActionSheet+YYRExtension.m in Sources */,
 				197DC3B82068CFEA002131F0 /* UISearchBar+YYRExtension.m in Sources */,
 				197DC40E2068D660002131F0 /* YYRViewModelServicesImpl.m in Sources */,
+				197DC4982068FD8B002131F0 /* NSString+Regular.m in Sources */,
+				197DC48C2068FBC9002131F0 /* UIColor+YYRAddition.m in Sources */,
 				197DC4592068E7CD002131F0 /* YYRCommonSwitchItemViewModel.m in Sources */,
 				197DC4322068E183002131F0 /* YYFileHash.m in Sources */,
 				197DC3BB2068CFEA002131F0 /* UITextView+YYRExtension.m in Sources */,
@@ -1430,10 +1567,14 @@
 				197DC4562068E792002131F0 /* YYRCommonValueItemViewModel.m in Sources */,
 				197DC4622068EBDB002131F0 /* YYRWebViewController.m in Sources */,
 				197DC2D52068CDDE002131F0 /* ViewController.m in Sources */,
+				197DC4712068FA62002131F0 /* NSArray+YYRAddition.m in Sources */,
 				197DC3C52068CFEA002131F0 /* YYRFileManager.m in Sources */,
 				197DC3B72068CFEA002131F0 /* UIScrollView+YYRRefresh.m in Sources */,
 				197DC44A2068E68F002131F0 /* YYRCommonProfileHeaderItemViewModel.m in Sources */,
+				197DC4922068FD01002131F0 /* UILabel+ChangeLineSpaceAndWordSpace.m in Sources */,
+				197DC49B2068FDDA002131F0 /* UIAlertController+Dismiss.m in Sources */,
 				197DC4332068E183002131F0 /* YYGestureRecognizer.m in Sources */,
+				197DC4A72068FE03002131F0 /* UIViewController+PrivacyAlert.m in Sources */,
 				197DC4352068E183002131F0 /* YYReachability.m in Sources */,
 				197DC4052068D5CC002131F0 /* YYRTableViewController.m in Sources */,
 				197DC4682068EF4D002131F0 /* YYRCommonTableViewModel.m in Sources */,
@@ -1447,11 +1588,14 @@
 				197DC3A32068CFEA002131F0 /* Foundation+Log.m in Sources */,
 				197DC3C22068CFEA002131F0 /* YYREmoticon.m in Sources */,
 				197DC3CD2068CFEA002131F0 /* YYRKeyedSubscript.m in Sources */,
+				197DC4722068FA62002131F0 /* NSNull+NullSafe.m in Sources */,
 				197DC2E02068CDDE002131F0 /* main.m in Sources */,
 				197DC41A2068D8F1002131F0 /* YYRSegmentedControlViewModel.m in Sources */,
+				197DC4832068FB45002131F0 /* NSString+YYRAddition.m in Sources */,
 				197DC2D22068CDDE002131F0 /* AppDelegate.m in Sources */,
 				197DC3A22068CFEA002131F0 /* YYRUser.m in Sources */,
 				197DC3C82068CFEA002131F0 /* YYRHTTPResponse.m in Sources */,
+				197DC4A22068FDF0002131F0 /* UIViewController+Alert.m in Sources */,
 				197DC4202068DD3D002131F0 /* YYRDebugTouchView.m in Sources */,
 				197DC4412068E5D2002131F0 /* YYRCommonGroupViewModel.m in Sources */,
 				197DC4442068E605002131F0 /* YYRCommonItemViewModel.m in Sources */,
@@ -1465,13 +1609,17 @@
 				197DC3B32068CFEA002131F0 /* UIBarButtonItem+YYRExtension.m in Sources */,
 				197DC3FA2068D010002131F0 /* YYRSearchBar.m in Sources */,
 				197DC3C72068CFEA002131F0 /* YYRRouter.m in Sources */,
+				197DC4842068FB45002131F0 /* NSString+safeSetter.m in Sources */,
+				197DC47D2068FB0A002131F0 /* NSDate+Extend.m in Sources */,
 				197DC3F72068D010002131F0 /* YYRReflection.m in Sources */,
 				197DC4022068D010002131F0 /* YYRViewModel.m in Sources */,
+				197DC4752068FA8D002131F0 /* NSAttributedString+YYRAddition.m in Sources */,
 				197DC3FC2068D010002131F0 /* YYRTableView.m in Sources */,
 				197DC3AA2068CFEA002131F0 /* NSError+YYRExtension.m in Sources */,
 				197DC3B22068CFEA002131F0 /* UIAlertController+YYRColor.m in Sources */,
 				197DC3A92068CFEA002131F0 /* NSDateFormatter+YYRExtension.m in Sources */,
 				197DC4502068E720002131F0 /* YYRCommonLabelItemViewModel.m in Sources */,
+				197DC4AC2068FF5F002131F0 /* UITableViewCell+Alert.m in Sources */,
 				197DC3D12068CFEA002131F0 /* YYRConstant.m in Sources */,
 				197DC4362068E183002131F0 /* YYThreadSafeArray.m in Sources */,
 				197DC3A42068CFEA002131F0 /* FBKVOController+YYRExtension.m in Sources */,

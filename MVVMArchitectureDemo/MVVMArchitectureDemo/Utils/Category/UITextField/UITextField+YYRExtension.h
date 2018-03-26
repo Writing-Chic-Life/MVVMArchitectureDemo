@@ -13,4 +13,12 @@
 /// 限制最大长度
 - (void)yyr_limitMaxLength:(NSInteger)maxLength;
 
+/**
+ 实例化 UITextField
+ 
+ @param placeHolder 占位文本
+ @return UITextField
+ */
++ (nonnull instancetype)yyr_textFieldWithPlaceHolder:(nonnull NSString *)placeHolder;
+
 @end

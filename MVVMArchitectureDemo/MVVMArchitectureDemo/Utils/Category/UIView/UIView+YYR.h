@@ -11,5 +11,6 @@
 
 #import "UIView+YYRExtension.h"
 #import "UIView+YYRFrame.h"
+#import "UIView+YYRAddition.h"
 
 #endif /* UIView_YYR_h */

@@ -13,5 +13,9 @@
 #import "NSAttributedString+YYRSize.h"
 #import "NSString+YYRValid.h"
 #import "NSString+YYRExtension.h"
+#import "NSAttributedString+YYRAddition.h"
+#import "NSString+safeSetter.h"
+#import "NSString+YYRAddition.h"
+#import "NSString+Regular.h"
 
 #endif /* NSString_YYR_h */

@@ -34,4 +34,14 @@
     }];
 }
 
++ (instancetype)yyr_textFieldWithPlaceHolder:(NSString *)placeHolder {
+    
+    UITextField *textField = [[self alloc] init];
+    
+    textField.borderStyle = UITextBorderStyleRoundedRect;
+    textField.placeholder = placeHolder;
+    
+    return textField;
+}
+
 @end
