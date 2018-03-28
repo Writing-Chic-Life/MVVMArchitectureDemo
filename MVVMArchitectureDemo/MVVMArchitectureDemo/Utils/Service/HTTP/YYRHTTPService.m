@@ -146,8 +146,7 @@ static id service_ = nil;
 }
 
 #pragma mark - User Module
-- (void)saveUser:(YYRUser *)user
-{
+- (void)saveUser:(YYRUser *)user {
     /// 记录用户数据
     self.currentUser = user;
     
@@ -156,14 +155,14 @@ static id service_ = nil;
     NSLog(@"Save login user data， the status is %@",status?@"Success...":@"Failure...");
 }
 
-- (void)deleteUser:(YYRUser *)user{
+- (void)deleteUser:(YYRUser *)user {
     /// 删除
     self.currentUser = nil;
     //    BOOL status = [YYRFileManager removeFile:YYRFilePathFromWeChatDoc(YYRUserDataFileName)];
     //    NSLog(@"Delete login user data ， the status is %@",status?@"Success...":@"Failure...");
 }
 
-- (YYRUser *)currentUser{
+- (YYRUser *)currentUser {
     if (!_currentUser) {
         _currentUser = [NSKeyedUnarchiver unarchiveObjectWithFile:YYRFilePathFromWeChatDoc(YYRUserDataFileName) exception:nil];
     }
@@ -171,11 +170,11 @@ static id service_ = nil;
 }
 
 /// 获取当前用户的id
-- (NSString *)currentUserId{
+- (NSString *)currentUserId {
     return [self currentUser].idstr;
 }
 
-- (void)loginUser:(YYRUser *)user{
+- (void)loginUser:(YYRUser *)user {
     /// 保存用户
     [self saveUser:user];
     
@@ -187,7 +186,7 @@ static id service_ = nil;
 }
 
 /// 退出登录
-- (void)logoutUser{
+- (void)logoutUser {
     YYRUser *currentUser = [self currentUser];
     
     /// 删除别名
@@ -201,7 +200,7 @@ static id service_ = nil;
 }
 
 /// 用户信息配置完成
-- (void)postUserDataConfigureCompleteNotification{
+- (void)postUserDataConfigureCompleteNotification {
     YYRUser *user = [self currentUser];
     [YYRNotificationCenter postNotificationName:YYRUserDataConfigureCompleteNotification object:nil userInfo:@{YYRUserDataConfigureCompleteUserInfoKey:user}];
 }
@@ -209,7 +208,7 @@ static id service_ = nil;
 
 
 #pragma mark - Request
--(RACSignal *) enqueueRequest:(YYRHTTPRequest *) request resultClass:(Class /*subclass of YYRObject*/) resultClass{
+-(RACSignal *)enqueueRequest:(YYRHTTPRequest *)request resultClass:(Class /*subclass of YYRObject*/)resultClass {
     /// request 必须的有值
     if (!request) return [RACSignal error:[NSError errorWithDomain:YYRHTTPServiceErrorDomain code:-1 userInfo:nil]];
     
@@ -235,7 +234,7 @@ static id service_ = nil;
             concat];
 }
 /// 请求数据
-- (RACSignal *)enqueueRequestWithPath:(NSString *)path parameters:(id)parameters method:(NSString *)method{
+- (RACSignal *)enqueueRequestWithPath:(NSString *)path parameters:(id)parameters method:(NSString *)method {
     @weakify(self);
     /// 创建信号
     RACSignal *signal = [RACSignal createSignal:^(id<RACSubscriber> subscriber) {
@@ -340,7 +339,7 @@ static id service_ = nil;
 
 
 #pragma mark - Upload
-- (RACSignal *)enqueueUploadRequest:(YYRHTTPRequest *)request resultClass:(Class)resultClass fileDatas:(NSArray<NSData *> *)fileDatas name:(NSString *)name mimeType:(NSString *)mimeType{
+- (RACSignal *)enqueueUploadRequest:(YYRHTTPRequest *)request resultClass:(Class)resultClass fileDatas:(NSArray<NSData *> *)fileDatas name:(NSString *)name mimeType:(NSString *)mimeType {
     /// request 必须的有值
     if (!request) return [RACSignal error:[NSError errorWithDomain:YYRHTTPServiceErrorDomain code:-1 userInfo:nil]];
     /// 断言
@@ -393,7 +392,7 @@ static id service_ = nil;
 }
 
 
-- (RACSignal *)enqueueUploadRequestWithPath:(NSString *)path parameters:(id)parameters constructingBodyWithBlock:(void (^)(id <AFMultipartFormData> formData))block{
+- (RACSignal *)enqueueUploadRequestWithPath:(NSString *)path parameters:(id)parameters constructingBodyWithBlock:(void (^)(id <AFMultipartFormData> formData))block {
     @weakify(self);
     /// 创建信号
     RACSignal *signal = [RACSignal createSignal:^(id<RACSubscriber> subscriber) {
@@ -699,7 +698,7 @@ static id service_ = nil;
 #pragma mark - 打印请求日志
 - (void)HTTPRequestLog:(NSURLSessionTask *)task body:params error:(NSError *)error {
     NSLog(@">>>>>>>>>>>>>>>>>>>>>👇 REQUEST FINISH 👇>>>>>>>>>>>>>>>>>>>>>>>>>>");
-    NSLog(@"Request%@=======>:%@", error?@"失败":@"成功", task.currentRequest.URL.absoluteString);
+    NSLog(@"Request%@=======>:%@", error ? @"失败" : @"成功", task.currentRequest.URL.absoluteString);
     NSLog(@"requestBody======>:%@", params);
     NSLog(@"requstHeader=====>:%@", task.currentRequest.allHTTPHeaderFields);
     NSLog(@"response=========>:%@", task.response);
@@ -749,7 +748,7 @@ static id service_ = nil;
 }
 
 /// 序列化
-- (AFHTTPRequestSerializer *)_requestSerializerWithRequest:(YYRHTTPRequest *) request{
+- (AFHTTPRequestSerializer *)_requestSerializerWithRequest:(YYRHTTPRequest *) request {
     /// 获取基础参数（参数+拓展参数）
     NSMutableDictionary *parameters = [self _parametersWithRequest:request];
     /// 获取带签名的参数

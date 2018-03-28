@@ -146,8 +146,8 @@
         
         /// eg: [A push B]
         /// 1.取出当前的控制器的title ， 也就是取出 A.title
-        /// CoderMikeHe Fixed: [[self topViewController] navigationItem].title 这样来获取title 而不是[[self topViewController] title]
-        title = [[self topViewController] navigationItem].title?:@"返回";
+        ///  Fixed: [[self topViewController] navigationItem].title 这样来获取title 而不是[[self topViewController] title]
+        title = [[self topViewController] navigationItem].title ? : @"返回";
         
         /// 2.判断要被Push的控制器（B）是否是 MHViewController ，
         if ([viewController isKindOfClass:[YYRViewController class]]) {
@@ -155,7 +155,7 @@
             YYRViewModel *viewModel = [(YYRViewController *)viewController viewModel];
             
             /// 3. 查看backTitle 是否有值
-            title = viewModel.backTitle?:title;
+            title = viewModel.backTitle ? : title;
             
             
         }

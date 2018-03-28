@@ -11,8 +11,8 @@
 @implementation YYRViewModelServicesImpl
 
 @synthesize client = _client;
-- (instancetype)init
-{
+
+- (instancetype)init {
     self = [super init];
     if (self) {
         _client = [YYRHTTPService sharedInstance];
@@ -21,7 +21,7 @@
 }
 
 
-#pragma mark - SBNavigationProtocol empty operation
+#pragma mark - YYRNavigationProtocol empty operation
 - (void)pushViewModel:(YYRViewModel *)viewModel animated:(BOOL)animated {}
 
 - (void)popViewModelAnimated:(BOOL)animated {}

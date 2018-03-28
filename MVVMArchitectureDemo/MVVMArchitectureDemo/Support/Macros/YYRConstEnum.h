@@ -11,7 +11,7 @@
 
 /// tababr item tag
 typedef NS_ENUM(NSUInteger, YYRTabBarItemTagType) {
-    YYRTabBarItemTagTypeMainFrame = 0,    /// 消息回话
+    YYRTabBarItemTagTypeHomePage = 0,    /// 消息回话
     YYRTabBarItemTagTypeContacts,         /// 通讯录
     YYRTabBarItemTagTypeDiscover,         /// 发现
     YYRTabBarItemTagTypeProfile,          /// 我的

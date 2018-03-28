@@ -240,10 +240,10 @@
 
 
 #pragma mark - 辅助方法
-- (void)_requestDataCompleted{
+- (void)_requestDataCompleted {
     NSUInteger count = self.viewModel.dataSource.count;
     /// CoderMikeHe Fixed: 这里必须要等到，底部控件结束刷新后，再来设置无更多数据，否则被叠加无效
-    if (self.viewModel.shouldEndRefreshingWithNoMoreData && count%self.viewModel.perPage) [self.tableView.mj_footer endRefreshingWithNoMoreData];
+    if (self.viewModel.shouldEndRefreshingWithNoMoreData && count % self.viewModel.perPage) [self.tableView.mj_footer endRefreshingWithNoMoreData];
 }
 
 

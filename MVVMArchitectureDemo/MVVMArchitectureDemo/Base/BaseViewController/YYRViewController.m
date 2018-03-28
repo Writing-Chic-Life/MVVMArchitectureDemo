@@ -18,8 +18,7 @@
 
 @implementation YYRViewController
 
-- (void)dealloc
-{
+- (void)dealloc {
     /// 销毁时保存数据
     //    [SBPhotoManager configureSelectOriginalPhoto:_isSelectOriginalPhoto];
     YYRDealloc;
@@ -46,10 +45,10 @@
     return self;
 }
 
-- (void)viewWillAppear:(BOOL)animated{
+- (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     /// 隐藏导航栏细线
-    self.viewModel.prefersNavigationBarBottomLineHidden?[(YYRNavigationController *)self.navigationController hideNavigationBottomLine]:[(YYRNavigationController *)self.navigationController showNavigationBottomLine];
+    self.viewModel.prefersNavigationBarBottomLineHidden ? [(YYRNavigationController *)self.navigationController hideNavigationBottomLine] : [(YYRNavigationController *)self.navigationController showNavigationBottomLine];
     /// 配置键盘
     IQKeyboardManager.sharedManager.enable = self.viewModel.keyboardEnable;
     IQKeyboardManager.sharedManager.shouldResignOnTouchOutside = self.viewModel.shouldResignOnTouchOutside;
@@ -105,7 +104,7 @@
 
 
 // bind the viewModel
-- (void)bindViewModel{
+- (void)bindViewModel {
     /// set navgation title
     /// CoderMikeHe Fixed: 这里只是单纯设置导航栏的title。 不然以免self.title同时设置了navigatiItem.title, 同时又设置了tabBarItem.title
     

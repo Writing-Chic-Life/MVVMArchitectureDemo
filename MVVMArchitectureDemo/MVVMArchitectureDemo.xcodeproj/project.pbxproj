@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		020972834CCB79E810A3A8E6 /* libPods-MVVMArchitectureDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37637F704CE77010EE5B6094 /* libPods-MVVMArchitectureDemo.a */; };
 		197DC2D22068CDDE002131F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC2D12068CDDE002131F0 /* AppDelegate.m */; };
-		197DC2D52068CDDE002131F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC2D42068CDDE002131F0 /* ViewController.m */; };
 		197DC2D82068CDDE002131F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197DC2D62068CDDE002131F0 /* Main.storyboard */; };
 		197DC2DA2068CDDE002131F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 197DC2D92068CDDE002131F0 /* Assets.xcassets */; };
 		197DC2DD2068CDDE002131F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197DC2DB2068CDDE002131F0 /* LaunchScreen.storyboard */; };
@@ -131,6 +130,22 @@
 		197DC4A72068FE03002131F0 /* UIViewController+PrivacyAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC4A52068FE03002131F0 /* UIViewController+PrivacyAlert.m */; };
 		197DC4AB2068FF5F002131F0 /* NSObject+YYRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC4A92068FF5E002131F0 /* NSObject+YYRAddition.m */; };
 		197DC4AC2068FF5F002131F0 /* UITableViewCell+Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC4AA2068FF5E002131F0 /* UITableViewCell+Alert.m */; };
+		197F966F206A340A00FC842A /* YYRMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 197F966E206A340A00FC842A /* YYRMainTabBarController.m */; };
+		197F9672206A346E00FC842A /* YYRMainTabBarViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 197F9671206A346E00FC842A /* YYRMainTabBarViewModel.m */; };
+		197F967B206A36F600FC842A /* YYRContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 197F967A206A36F600FC842A /* YYRContactsViewController.m */; };
+		197F967E206A380F00FC842A /* YYRDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 197F967D206A380F00FC842A /* YYRDiscoverViewController.m */; };
+		197F9681206A381E00FC842A /* YYRProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 197F9680206A381E00FC842A /* YYRProfileViewController.m */; };
+		197F9684206A38C000FC842A /* YYRProfileViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 197F9683206A38C000FC842A /* YYRProfileViewModel.m */; };
+		197F9687206A38CE00FC842A /* YYRDiscoverViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 197F9686206A38CE00FC842A /* YYRDiscoverViewModel.m */; };
+		197F968D206A3BF500FC842A /* YYRHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 197F968C206A3BF500FC842A /* YYRHomePageViewController.m */; };
+		197F9690206A3C2300FC842A /* YYRHomePageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 197F968F206A3C2300FC842A /* YYRHomePageViewModel.m */; };
+		197F9693206A3CD500FC842A /* YYRContactsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 197F9692206A3CD500FC842A /* YYRContactsViewModel.m */; };
+		197F969B206B75C800FC842A /* YYRHomePageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 197F969A206B75C800FC842A /* YYRHomePageTableViewCell.m */; };
+		197F969E206B770000FC842A /* YYRHomePageItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 197F969D206B770000FC842A /* YYRHomePageItemViewModel.m */; };
+		197F96A1206B779600FC842A /* YYRLiveRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 197F96A0206B779600FC842A /* YYRLiveRoom.m */; };
+		197F96A5206B7E7D00FC842A /* YYRHTTPService+Live.m in Sources */ = {isa = PBXBuildFile; fileRef = 197F96A4206B7E7D00FC842A /* YYRHTTPService+Live.m */; };
+		197F96A8206B831300FC842A /* YYRBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 197F96A7206B831300FC842A /* YYRBaseTableViewCell.m */; };
+		197F96AB206B842500FC842A /* YYRBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 197F96AA206B842500FC842A /* YYRBaseView.m */; };
 		6DD87315EDC291745613AB01 /* libPods-MVVMArchitectureDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65859389699B527633BF67C7 /* libPods-MVVMArchitectureDemoUITests.a */; };
 		ECC1AB43200FBEA9912CE088 /* libPods-MVVMArchitectureDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0053E11E54A667265E0D271 /* libPods-MVVMArchitectureDemoTests.a */; };
 /* End PBXBuildFile section */
@@ -157,8 +172,6 @@
 		197DC2CD2068CDDE002131F0 /* MVVMArchitectureDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMArchitectureDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		197DC2D02068CDDE002131F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		197DC2D12068CDDE002131F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		197DC2D32068CDDE002131F0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		197DC2D42068CDDE002131F0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		197DC2D72068CDDE002131F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		197DC2D92068CDDE002131F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		197DC2DC2068CDDE002131F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -228,7 +241,6 @@
 		197DC3572068CFEA002131F0 /* UIView+YYRExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YYRExtension.m"; sourceTree = "<group>"; };
 		197DC3582068CFEA002131F0 /* UIView+YYRFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YYRFrame.h"; sourceTree = "<group>"; };
 		197DC3592068CFEA002131F0 /* UIView+YYRFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YYRFrame.m"; sourceTree = "<group>"; };
-		197DC35A2068CFEA002131F0 /* YYRExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYRExtension.h; sourceTree = "<group>"; };
 		197DC35C2068CFEA002131F0 /* YYRControllerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYRControllerHelper.h; sourceTree = "<group>"; };
 		197DC35D2068CFEA002131F0 /* YYRControllerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYRControllerHelper.m; sourceTree = "<group>"; };
 		197DC35E2068CFEA002131F0 /* YYRMomentHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYRMomentHelper.h; sourceTree = "<group>"; };
@@ -411,6 +423,39 @@
 		197DC4A82068FF5E002131F0 /* NSObject+YYRAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYRAddition.h"; sourceTree = "<group>"; };
 		197DC4A92068FF5E002131F0 /* NSObject+YYRAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYRAddition.m"; sourceTree = "<group>"; };
 		197DC4AA2068FF5E002131F0 /* UITableViewCell+Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+Alert.m"; path = "../../../../../../ios/SISSAPP/APP/Tools/Category/UITableViewCell+Alert.m"; sourceTree = "<group>"; };
+		197F96532069EE0400FC842A /* YYRExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYRExtension.h; sourceTree = "<group>"; };
+		197F966D206A340A00FC842A /* YYRMainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRMainTabBarController.h; sourceTree = "<group>"; };
+		197F966E206A340A00FC842A /* YYRMainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRMainTabBarController.m; sourceTree = "<group>"; };
+		197F9670206A346E00FC842A /* YYRMainTabBarViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRMainTabBarViewModel.h; sourceTree = "<group>"; };
+		197F9671206A346E00FC842A /* YYRMainTabBarViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRMainTabBarViewModel.m; sourceTree = "<group>"; };
+		197F9679206A36F600FC842A /* YYRContactsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRContactsViewController.h; sourceTree = "<group>"; };
+		197F967A206A36F600FC842A /* YYRContactsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRContactsViewController.m; sourceTree = "<group>"; };
+		197F967C206A380F00FC842A /* YYRDiscoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRDiscoverViewController.h; sourceTree = "<group>"; };
+		197F967D206A380F00FC842A /* YYRDiscoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRDiscoverViewController.m; sourceTree = "<group>"; };
+		197F967F206A381E00FC842A /* YYRProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRProfileViewController.h; sourceTree = "<group>"; };
+		197F9680206A381E00FC842A /* YYRProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRProfileViewController.m; sourceTree = "<group>"; };
+		197F9682206A38C000FC842A /* YYRProfileViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRProfileViewModel.h; sourceTree = "<group>"; };
+		197F9683206A38C000FC842A /* YYRProfileViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRProfileViewModel.m; sourceTree = "<group>"; };
+		197F9685206A38CE00FC842A /* YYRDiscoverViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRDiscoverViewModel.h; sourceTree = "<group>"; };
+		197F9686206A38CE00FC842A /* YYRDiscoverViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRDiscoverViewModel.m; sourceTree = "<group>"; };
+		197F968B206A3BF500FC842A /* YYRHomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRHomePageViewController.h; sourceTree = "<group>"; };
+		197F968C206A3BF500FC842A /* YYRHomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRHomePageViewController.m; sourceTree = "<group>"; };
+		197F968E206A3C2300FC842A /* YYRHomePageViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRHomePageViewModel.h; sourceTree = "<group>"; };
+		197F968F206A3C2300FC842A /* YYRHomePageViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRHomePageViewModel.m; sourceTree = "<group>"; };
+		197F9691206A3CD500FC842A /* YYRContactsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRContactsViewModel.h; sourceTree = "<group>"; };
+		197F9692206A3CD500FC842A /* YYRContactsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRContactsViewModel.m; sourceTree = "<group>"; };
+		197F9699206B75C800FC842A /* YYRHomePageTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRHomePageTableViewCell.h; sourceTree = "<group>"; };
+		197F969A206B75C800FC842A /* YYRHomePageTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRHomePageTableViewCell.m; sourceTree = "<group>"; };
+		197F969C206B770000FC842A /* YYRHomePageItemViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRHomePageItemViewModel.h; sourceTree = "<group>"; };
+		197F969D206B770000FC842A /* YYRHomePageItemViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRHomePageItemViewModel.m; sourceTree = "<group>"; };
+		197F969F206B779600FC842A /* YYRLiveRoom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRLiveRoom.h; sourceTree = "<group>"; };
+		197F96A0206B779600FC842A /* YYRLiveRoom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRLiveRoom.m; sourceTree = "<group>"; };
+		197F96A3206B7E7D00FC842A /* YYRHTTPService+Live.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YYRHTTPService+Live.h"; sourceTree = "<group>"; };
+		197F96A4206B7E7D00FC842A /* YYRHTTPService+Live.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YYRHTTPService+Live.m"; sourceTree = "<group>"; };
+		197F96A6206B831300FC842A /* YYRBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRBaseTableViewCell.h; sourceTree = "<group>"; };
+		197F96A7206B831300FC842A /* YYRBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRBaseTableViewCell.m; sourceTree = "<group>"; };
+		197F96A9206B842500FC842A /* YYRBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRBaseView.h; sourceTree = "<group>"; };
+		197F96AA206B842500FC842A /* YYRBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRBaseView.m; sourceTree = "<group>"; };
 		37637F704CE77010EE5B6094 /* libPods-MVVMArchitectureDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVMArchitectureDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65859389699B527633BF67C7 /* libPods-MVVMArchitectureDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVMArchitectureDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		671819D567377139850F0F36 /* Pods-MVVMArchitectureDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMArchitectureDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMArchitectureDemo/Pods-MVVMArchitectureDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -476,8 +521,6 @@
 			children = (
 				197DC2D02068CDDE002131F0 /* AppDelegate.h */,
 				197DC2D12068CDDE002131F0 /* AppDelegate.m */,
-				197DC2D32068CDDE002131F0 /* ViewController.h */,
-				197DC2D42068CDDE002131F0 /* ViewController.m */,
 				197DC30C2068CFE9002131F0 /* Class */,
 				197DC3D42068D010002131F0 /* Base */,
 				197DC3032068CFE9002131F0 /* Common */,
@@ -541,6 +584,12 @@
 		197DC30C2068CFE9002131F0 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				197F9663206A338900FC842A /* Main */,
+				197F9694206B44AD00FC842A /* Login */,
+				197F9668206A338900FC842A /* Home */,
+				197F965E206A338900FC842A /* Contacts */,
+				197F9659206A338900FC842A /* Discover */,
+				197F9654206A338900FC842A /* Profile */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -556,7 +605,6 @@
 			isa = PBXGroup;
 			children = (
 				197DC30F2068CFE9002131F0 /* Category */,
-				197DC35A2068CFEA002131F0 /* YYRExtension.h */,
 				197DC35B2068CFEA002131F0 /* Helper */,
 				197DC3622068CFEA002131F0 /* Manager */,
 				197DC3732068CFEA002131F0 /* Protocol */,
@@ -571,6 +619,7 @@
 		197DC30F2068CFE9002131F0 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				197F96532069EE0400FC842A /* YYRExtension.h */,
 				197DC3102068CFE9002131F0 /* Common */,
 				197DC3122068CFE9002131F0 /* FBKVOController */,
 				197DC3152068CFE9002131F0 /* LCActionSheet */,
@@ -968,6 +1017,7 @@
 		197DC3942068CFEA002131F0 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				197F96A2206B7E5700FC842A /* Network */,
 				197DC3952068CFEA002131F0 /* Macros */,
 				197DC39C2068CFEA002131F0 /* Tool */,
 			);
@@ -1023,6 +1073,8 @@
 			children = (
 				197DC41B2068D941002131F0 /* YYRControl.h */,
 				197DC41C2068D941002131F0 /* YYRControl.m */,
+				197F96A9206B842500FC842A /* YYRBaseView.h */,
+				197F96AA206B842500FC842A /* YYRBaseView.m */,
 				197DC3DD2068D010002131F0 /* YYRButton.h */,
 				197DC3DE2068D010002131F0 /* YYRButton.m */,
 				197DC3DF2068D010002131F0 /* YYRImageView.h */,
@@ -1037,6 +1089,8 @@
 				197DC3E82068D010002131F0 /* YYRTextField.m */,
 				197DC41E2068DD3D002131F0 /* YYRDebugTouchView.h */,
 				197DC41F2068DD3D002131F0 /* YYRDebugTouchView.m */,
+				197F96A6206B831300FC842A /* YYRBaseTableViewCell.h */,
+				197F96A7206B831300FC842A /* YYRBaseTableViewCell.m */,
 				197DC43A2068E4D8002131F0 /* YYRCommonTableViewCell.h */,
 				197DC43B2068E4D8002131F0 /* YYRCommonTableViewCell.m */,
 				197DC45A2068EAB7002131F0 /* YYRCommonHeaderView.h */,
@@ -1184,6 +1238,275 @@
 				197DC48A2068FBC9002131F0 /* UIColor+YYRAddition.m */,
 			);
 			path = UIColor;
+			sourceTree = "<group>";
+		};
+		197F9654206A338900FC842A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				197F9655206A338900FC842A /* Controller */,
+				197F9656206A338900FC842A /* Model */,
+				197F9657206A338900FC842A /* View */,
+				197F9658206A338900FC842A /* ViewModel */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		197F9655206A338900FC842A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				197F967F206A381E00FC842A /* YYRProfileViewController.h */,
+				197F9680206A381E00FC842A /* YYRProfileViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		197F9656206A338900FC842A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		197F9657206A338900FC842A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		197F9658206A338900FC842A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				197F9682206A38C000FC842A /* YYRProfileViewModel.h */,
+				197F9683206A38C000FC842A /* YYRProfileViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		197F9659206A338900FC842A /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				197F965A206A338900FC842A /* Controller */,
+				197F965B206A338900FC842A /* Model */,
+				197F965C206A338900FC842A /* View */,
+				197F965D206A338900FC842A /* ViewModel */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		197F965A206A338900FC842A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				197F967C206A380F00FC842A /* YYRDiscoverViewController.h */,
+				197F967D206A380F00FC842A /* YYRDiscoverViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		197F965B206A338900FC842A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		197F965C206A338900FC842A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		197F965D206A338900FC842A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				197F9685206A38CE00FC842A /* YYRDiscoverViewModel.h */,
+				197F9686206A38CE00FC842A /* YYRDiscoverViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		197F965E206A338900FC842A /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				197F965F206A338900FC842A /* Controller */,
+				197F9660206A338900FC842A /* Model */,
+				197F9661206A338900FC842A /* View */,
+				197F9662206A338900FC842A /* ViewModel */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		197F965F206A338900FC842A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				197F9679206A36F600FC842A /* YYRContactsViewController.h */,
+				197F967A206A36F600FC842A /* YYRContactsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		197F9660206A338900FC842A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		197F9661206A338900FC842A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		197F9662206A338900FC842A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				197F9691206A3CD500FC842A /* YYRContactsViewModel.h */,
+				197F9692206A3CD500FC842A /* YYRContactsViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		197F9663206A338900FC842A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				197F9664206A338900FC842A /* Controller */,
+				197F9665206A338900FC842A /* Model */,
+				197F9666206A338900FC842A /* View */,
+				197F9667206A338900FC842A /* ViewModel */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		197F9664206A338900FC842A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				197F966D206A340A00FC842A /* YYRMainTabBarController.h */,
+				197F966E206A340A00FC842A /* YYRMainTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		197F9665206A338900FC842A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		197F9666206A338900FC842A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		197F9667206A338900FC842A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				197F9670206A346E00FC842A /* YYRMainTabBarViewModel.h */,
+				197F9671206A346E00FC842A /* YYRMainTabBarViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		197F9668206A338900FC842A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				197F9669206A338900FC842A /* Controller */,
+				197F966A206A338900FC842A /* Model */,
+				197F966B206A338900FC842A /* View */,
+				197F966C206A338900FC842A /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		197F9669206A338900FC842A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				197F968B206A3BF500FC842A /* YYRHomePageViewController.h */,
+				197F968C206A3BF500FC842A /* YYRHomePageViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		197F966A206A338900FC842A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				197F969F206B779600FC842A /* YYRLiveRoom.h */,
+				197F96A0206B779600FC842A /* YYRLiveRoom.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		197F966B206A338900FC842A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				197F9699206B75C800FC842A /* YYRHomePageTableViewCell.h */,
+				197F969A206B75C800FC842A /* YYRHomePageTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		197F966C206A338900FC842A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				197F968E206A3C2300FC842A /* YYRHomePageViewModel.h */,
+				197F968F206A3C2300FC842A /* YYRHomePageViewModel.m */,
+				197F969C206B770000FC842A /* YYRHomePageItemViewModel.h */,
+				197F969D206B770000FC842A /* YYRHomePageItemViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		197F9694206B44AD00FC842A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				197F9695206B44AD00FC842A /* Controller */,
+				197F9696206B44AD00FC842A /* Model */,
+				197F9697206B44AD00FC842A /* View */,
+				197F9698206B44AD00FC842A /* ViewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		197F9695206B44AD00FC842A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		197F9696206B44AD00FC842A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		197F9697206B44AD00FC842A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		197F9698206B44AD00FC842A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		197F96A2206B7E5700FC842A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				197F96A3206B7E7D00FC842A /* YYRHTTPService+Live.h */,
+				197F96A4206B7E7D00FC842A /* YYRHTTPService+Live.m */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		DC0EADBFCD68D5EE550B53B0 /* Pods */ = {
@@ -1530,6 +1853,7 @@
 				197DC3D02068CFEA002131F0 /* SAMKeychain+YYRUtil.m in Sources */,
 				197DC4952068FD32002131F0 /* UIScreen+YYRAddition.m in Sources */,
 				197DC4882068FB8F002131F0 /* UIButton+YYRAddition.m in Sources */,
+				197F96A5206B7E7D00FC842A /* YYRHTTPService+Live.m in Sources */,
 				197DC3B12068CFEA002131F0 /* NSString+YYRValid.m in Sources */,
 				197DC3FF2068D010002131F0 /* YYRNavigationControllerStack.m in Sources */,
 				197DC3AD2068CFEA002131F0 /* NSObject+YYRExtension.m in Sources */,
@@ -1544,6 +1868,7 @@
 				197DC4782068FAC8002131F0 /* NSBundle+YYRAddition.m in Sources */,
 				197DC3CC2068CFEA002131F0 /* YYRHTTPRequest.m in Sources */,
 				197DC4142068D824002131F0 /* YYRWebViewModel.m in Sources */,
+				197F967B206A36F600FC842A /* YYRContactsViewController.m in Sources */,
 				197DC4AB2068FF5F002131F0 /* NSObject+YYRAddition.m in Sources */,
 				197DC4012068D010002131F0 /* YYRViewController.m in Sources */,
 				197DC44D2068E6F7002131F0 /* YYRCommonAvatarItemViewModel.m in Sources */,
@@ -1560,24 +1885,31 @@
 				197DC4982068FD8B002131F0 /* NSString+Regular.m in Sources */,
 				197DC48C2068FBC9002131F0 /* UIColor+YYRAddition.m in Sources */,
 				197DC4592068E7CD002131F0 /* YYRCommonSwitchItemViewModel.m in Sources */,
+				197F96A8206B831300FC842A /* YYRBaseTableViewCell.m in Sources */,
 				197DC4322068E183002131F0 /* YYFileHash.m in Sources */,
 				197DC3BB2068CFEA002131F0 /* UITextView+YYRExtension.m in Sources */,
+				197F9672206A346E00FC842A /* YYRMainTabBarViewModel.m in Sources */,
 				197DC3C62068CFEA002131F0 /* YYRPhotoManager.m in Sources */,
 				197DC3C92068CFEA002131F0 /* AFHTTPSessionManager+RACSupport.m in Sources */,
 				197DC4562068E792002131F0 /* YYRCommonValueItemViewModel.m in Sources */,
 				197DC4622068EBDB002131F0 /* YYRWebViewController.m in Sources */,
-				197DC2D52068CDDE002131F0 /* ViewController.m in Sources */,
 				197DC4712068FA62002131F0 /* NSArray+YYRAddition.m in Sources */,
+				197F9684206A38C000FC842A /* YYRProfileViewModel.m in Sources */,
 				197DC3C52068CFEA002131F0 /* YYRFileManager.m in Sources */,
 				197DC3B72068CFEA002131F0 /* UIScrollView+YYRRefresh.m in Sources */,
 				197DC44A2068E68F002131F0 /* YYRCommonProfileHeaderItemViewModel.m in Sources */,
 				197DC4922068FD01002131F0 /* UILabel+ChangeLineSpaceAndWordSpace.m in Sources */,
 				197DC49B2068FDDA002131F0 /* UIAlertController+Dismiss.m in Sources */,
+				197F96A1206B779600FC842A /* YYRLiveRoom.m in Sources */,
 				197DC4332068E183002131F0 /* YYGestureRecognizer.m in Sources */,
+				197F9693206A3CD500FC842A /* YYRContactsViewModel.m in Sources */,
+				197F9690206A3C2300FC842A /* YYRHomePageViewModel.m in Sources */,
 				197DC4A72068FE03002131F0 /* UIViewController+PrivacyAlert.m in Sources */,
 				197DC4352068E183002131F0 /* YYReachability.m in Sources */,
 				197DC4052068D5CC002131F0 /* YYRTableViewController.m in Sources */,
+				197F966F206A340A00FC842A /* YYRMainTabBarController.m in Sources */,
 				197DC4682068EF4D002131F0 /* YYRCommonTableViewModel.m in Sources */,
+				197F967E206A380F00FC842A /* YYRDiscoverViewController.m in Sources */,
 				197DC3F62068D010002131F0 /* YYRObject.m in Sources */,
 				197DC3AF2068CFEA002131F0 /* NSString+YYRExtension.m in Sources */,
 				197DC3BA2068CFEA002131F0 /* UITextField+YYRExtension.m in Sources */,
@@ -1592,6 +1924,7 @@
 				197DC2E02068CDDE002131F0 /* main.m in Sources */,
 				197DC41A2068D8F1002131F0 /* YYRSegmentedControlViewModel.m in Sources */,
 				197DC4832068FB45002131F0 /* NSString+YYRAddition.m in Sources */,
+				197F969E206B770000FC842A /* YYRHomePageItemViewModel.m in Sources */,
 				197DC2D22068CDDE002131F0 /* AppDelegate.m in Sources */,
 				197DC3A22068CFEA002131F0 /* YYRUser.m in Sources */,
 				197DC3C82068CFEA002131F0 /* YYRHTTPResponse.m in Sources */,
@@ -1603,6 +1936,8 @@
 				197DC4372068E183002131F0 /* YYThreadSafeDictionary.m in Sources */,
 				197DC3AE2068CFEA002131F0 /* NSAttributedString+YYRSize.m in Sources */,
 				197DC4172068D874002131F0 /* YYRTabBarViewModel.m in Sources */,
+				197F9687206A38CE00FC842A /* YYRDiscoverViewModel.m in Sources */,
+				197F96AB206B842500FC842A /* YYRBaseView.m in Sources */,
 				197DC3BC2068CFEA002131F0 /* UIView+YYRExtension.m in Sources */,
 				197DC3B52068CFEA002131F0 /* UIImage+YYRExtension.m in Sources */,
 				197DC4652068ED94002131F0 /* YYRCommonTableViewController.m in Sources */,
@@ -1617,14 +1952,17 @@
 				197DC3FC2068D010002131F0 /* YYRTableView.m in Sources */,
 				197DC3AA2068CFEA002131F0 /* NSError+YYRExtension.m in Sources */,
 				197DC3B22068CFEA002131F0 /* UIAlertController+YYRColor.m in Sources */,
+				197F969B206B75C800FC842A /* YYRHomePageTableViewCell.m in Sources */,
 				197DC3A92068CFEA002131F0 /* NSDateFormatter+YYRExtension.m in Sources */,
 				197DC4502068E720002131F0 /* YYRCommonLabelItemViewModel.m in Sources */,
+				197F9681206A381E00FC842A /* YYRProfileViewController.m in Sources */,
 				197DC4AC2068FF5F002131F0 /* UITableViewCell+Alert.m in Sources */,
 				197DC3D12068CFEA002131F0 /* YYRConstant.m in Sources */,
 				197DC4362068E183002131F0 /* YYThreadSafeArray.m in Sources */,
 				197DC3A42068CFEA002131F0 /* FBKVOController+YYRExtension.m in Sources */,
 				197DC4342068E183002131F0 /* YYKeychain.m in Sources */,
 				197DC46B2068EFD4002131F0 /* YYRSegmentedControlController.m in Sources */,
+				197F968D206A3BF500FC842A /* YYRHomePageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1796,7 +2134,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yyr.ios.www.MVVMArchitectureDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1813,7 +2151,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yyr.ios.www.MVVMArchitectureDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

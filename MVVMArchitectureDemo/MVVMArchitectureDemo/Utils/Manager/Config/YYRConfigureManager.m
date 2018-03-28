@@ -28,7 +28,7 @@ static NSString * const YYRApplicationUseHttpsKey = @"YYRApplicationUseHttpsKey"
 }
 
 + (void)setApplicationFormalSetting:(BOOL)formalSetting{
-    is_formal_setting = formalSetting?@"1":@"0";
+    is_formal_setting = formalSetting ? @"1" : @"0";
     [[NSUserDefaults standardUserDefaults] setObject:is_formal_setting forKey:YYRApplicationFormalSettingKey];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
@@ -47,13 +47,13 @@ static NSString * const YYRApplicationUseHttpsKey = @"YYRApplicationUseHttpsKey"
 }
 
 
-+ (void)setApplicationAppStoreFormalSetting:(BOOL)formalSetting{
-    is_appStore_formal_setting = formalSetting?@"1":@"0";
++ (void)setApplicationAppStoreFormalSetting:(BOOL)formalSetting {
+    is_appStore_formal_setting = formalSetting ? @"1" : @"0";
     [[NSUserDefaults standardUserDefaults] setObject:is_appStore_formal_setting forKey:YYRApplicationAppStoreFormalSettingKey];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
-+ (BOOL)applicationAppStoreFormalSetting{
++ (BOOL)applicationAppStoreFormalSetting {
 #if DEBUG
     if (!is_appStore_formal_setting) {
         is_appStore_formal_setting = [[NSUserDefaults standardUserDefaults] objectForKey:YYRApplicationAppStoreFormalSettingKey];
@@ -66,13 +66,13 @@ static NSString * const YYRApplicationUseHttpsKey = @"YYRApplicationUseHttpsKey"
 #endif
 }
 
-+ (void)setApplicationUseHttps:(BOOL)useHttps{
-    is_use_https = useHttps?@"1":@"0";
++ (void)setApplicationUseHttps:(BOOL)useHttps {
+    is_use_https = useHttps ? @"1" : @"0";
     [[NSUserDefaults standardUserDefaults] setObject:is_use_https forKey:YYRApplicationUseHttpsKey];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
-+(BOOL)applicationUseHttps{
++ (BOOL)applicationUseHttps {
 #if DEBUG
     if (!is_use_https) {
         is_use_https = [[NSUserDefaults standardUserDefaults] objectForKey:YYRApplicationUseHttpsKey];
@@ -95,7 +95,7 @@ static NSString * const YYRApplicationUseHttpsKey = @"YYRApplicationUseHttpsKey"
 
 
 /// 请求的baseUrl
-+ (NSString *)requestBaseUrl{
++ (NSString *)requestBaseUrl {
     if ([self applicationFormalSetting]){
         /// 注意：这里针对你项目中请求baseUrl来处理....
         if ([self applicationAppStoreFormalSetting]) {

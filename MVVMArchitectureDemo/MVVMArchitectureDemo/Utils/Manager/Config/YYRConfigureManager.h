@@ -28,6 +28,6 @@
 /// 是否是https请求方式
 + (BOOL)applicationUseHttps;
 
-/// 请求Url
-
+/// 请求的baseUrl
++ (NSString *)requestBaseUrl;
 @end

@@ -19,7 +19,7 @@
  @param parameters  参数模型
  @return 请求类
  */
-+(instancetype)requestWithParameters:(YYRURLParameters *)parameters;
++ (instancetype)requestWithParameters:(YYRURLParameters *)parameters;
 
 @end
 /// YYRHTTPService的分类

@@ -147,7 +147,7 @@ FOUNDATION_EXTERN NSString *const SBUserDataConfigureCompleteUserInfoKey;
  JSON object, then complete. If an error occurs at any point,
  the returned signal will send it immediately, then terminate.
  */
--(RACSignal *)enqueueRequest:(YYRHTTPRequest *) request
+- (RACSignal *)enqueueRequest:(YYRHTTPRequest *) request
                  resultClass:(Class /*subclass of YYRObject*/) resultClass;
 
 

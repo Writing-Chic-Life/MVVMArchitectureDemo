@@ -10,6 +10,6 @@
 #define YYRURLConfigure_h
 
 /// 获取直播间列表
-#define MH_GET_LIVE_ROOM_LIST  @"Room/GetHotLive_v2"
+#define YYR_GET_LIVE_ROOM_LIST  @"Room/GetHotLive_v2"
 
 #endif /* YYRURLConfigure_h */

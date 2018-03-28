@@ -16,7 +16,7 @@
 /// 拼接一个字典
 + (instancetype)subscriptWithDictionary:(NSDictionary *)dict;
 
--(instancetype)initWithDictionary:(NSDictionary *)dict;
+- (instancetype)initWithDictionary:(NSDictionary *)dict;
 
 - (id)objectForKeyedSubscript:(id)key;
 
