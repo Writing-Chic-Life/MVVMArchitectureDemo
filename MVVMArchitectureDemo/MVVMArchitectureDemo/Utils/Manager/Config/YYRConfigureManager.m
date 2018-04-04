@@ -101,16 +101,16 @@ static NSString * const YYRApplicationUseHttpsKey = @"YYRApplicationUseHttpsKey"
         if ([self applicationAppStoreFormalSetting]) {
             /// AppStore正式环境
             NSLog(@"￥￥￥￥￥￥￥￥ AppStore正式环境 ￥￥￥￥￥￥￥￥");
-            return [self applicationUseHttps] ? @"https://live.9158.com/":@"https://live.9158.com/";
-        }else{
+            return [self applicationUseHttps] ? @"https://live.9158.com/" : @"https://live.9158.com/";
+        } else {
             /// 测试正式环境
             NSLog(@"￥￥￥￥￥￥￥￥ 测试正式环境 ￥￥￥￥￥￥￥￥");
-            return [self applicationUseHttps] ? @"https://live.9158.com/":@"https://live.9158.com/";
+            return [self applicationUseHttps] ? @"https://live.9158.com/" : @"https://live.9158.com/";
         }
     } else {
         /// 测试环境
         NSLog(@"￥￥￥￥￥￥￥￥ 测试环境 ￥￥￥￥￥￥￥￥");
-        return [self applicationUseHttps] ?@"https://live.9158.com/":@"https://live.9158.com/";
+        return [self applicationUseHttps] ? @"https://live.9158.com/" : @"https://live.9158.com/";
     }
 }
 

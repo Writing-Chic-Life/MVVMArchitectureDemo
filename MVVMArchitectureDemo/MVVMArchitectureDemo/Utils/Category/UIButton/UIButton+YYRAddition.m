@@ -10,18 +10,6 @@
 
 @implementation UIButton (YYRAddition)
 
-+ (instancetype)yyr_buttonWithTitle:(NSString *)title textColor:(UIColor *)color andSize:(CGFloat)fontsize {
-    
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    //    btn.titleLabel.text = title; 错误方式
-    [btn setTitle:title forState:UIControlStateNormal];
-    
-    btn.titleLabel.font = [UIFont systemFontOfSize:fontsize];
-    btn.titleLabel.textColor = color;
-    
-    return btn;
-}
-
 + (instancetype)yyr_buttonWithTitle:(NSString *)title image:(UIImage *)normalImage andHighLight:(UIImage *)highLightImage {
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -34,6 +22,14 @@
 }
 
 + (instancetype)yyr_buttonWithTitle:(NSString *)title fontSize:(CGFloat)fontSize textColor:(UIColor *)textColor {
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setTitle:title forState:UIControlStateNormal];
+    button.titleLabel.font = [UIFont systemFontOfSize:fontSize];
+    [button setTitleColor:textColor forState:UIControlStateNormal];
+    return button;
+}
+
++ (instancetype)yyr_buttonWithAttributedTitle:(NSString *)title fontSize:(CGFloat)fontSize textColor:(UIColor *)textColor {
     NSAttributedString *attributedText = [[NSAttributedString alloc]
                                           initWithString:title
                                           attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:fontSize],
@@ -56,7 +52,7 @@
     return [self yyr_buttonWithAttributedText:nil imageName:imageName backImageName:backImageName highlightSuffix:highlightSuffix];
 }
 
-+ (instancetype)yyr_buttonWithTitle:(NSString *)title fontSize:(CGFloat)fontSize textColor:(UIColor *)textColor imageName:(NSString *)imageName backImageName:(NSString *)backImageName highlightSuffix:(NSString *)highlightSuffix {
++ (instancetype)yyr_buttonWithAttributedTitle:(NSString *)title fontSize:(CGFloat)fontSize textColor:(UIColor *)textColor imageName:(NSString *)imageName backImageName:(NSString *)backImageName highlightSuffix:(NSString *)highlightSuffix {
     
     NSAttributedString *attributedText = [[NSAttributedString alloc]
                                           initWithString:title

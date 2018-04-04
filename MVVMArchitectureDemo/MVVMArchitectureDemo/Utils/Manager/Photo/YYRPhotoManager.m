@@ -117,8 +117,8 @@ static CGFloat const YYRMaxImagesCount = 8;
                 tzBarItem = [UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[TZImagePickerController class]]];
                 BarItem = [UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UIImagePickerController class]]];
             } else {
-                tzBarItem = [UIBarButtonItem appearanceWhenContainedIn:[TZImagePickerController class], nil];
-                BarItem = [UIBarButtonItem appearanceWhenContainedIn:[UIImagePickerController class], nil];
+                tzBarItem = [UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[TZImagePickerController class]]];
+                BarItem = [UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UIImagePickerController class]]];
             }
             NSDictionary *titleTextAttributes = [tzBarItem titleTextAttributesForState:UIControlStateNormal];
             [BarItem setTitleTextAttributes:titleTextAttributes forState:UIControlStateNormal];
@@ -192,7 +192,7 @@ static CGFloat const YYRMaxImagesCount = 8;
     [viewController presentViewController:imagePicker animated:YES completion:nil];
 }
 
-+ (void)previewPhotos:(UIViewController *)viewController maxImagesCount:(NSInteger)maxImagesCount selectedAssets:(NSArray *)selecatedAssets selectedPhotos:(NSMutableArray *)selectedPhotos currentIndex:(NSInteger)currentIndex completion:(void (^)(NSArray<UIImage *> *, NSArray *, BOOL, NSArray<NSDictionary *> *))completion cancel:(void (^)(void))cancel {
++ (void)previewPhotos:(UIViewController *)viewController maxImagesCount:(NSInteger)maxImagesCount selectedAssets:(NSArray *)selecatedAssets selectedPhotos:(NSMutableArray *)selectedPhotos currentIndex:(NSInteger)currentIndex completion:(void (^)(NSArray<UIImage *> *, NSArray *, BOOL, NSArray<NSDictionary *> *))completion cancel:(void (^__strong)(void))cancel {
     /// show
     if (viewController==nil) viewController = [YYRControllerHelper topViewController];
     TZImagePickerController *imagePicker = [[TZImagePickerController alloc] initWithSelectedAssets:selecatedAssets.mutableCopy selectedPhotos:selectedPhotos.mutableCopy index:currentIndex];

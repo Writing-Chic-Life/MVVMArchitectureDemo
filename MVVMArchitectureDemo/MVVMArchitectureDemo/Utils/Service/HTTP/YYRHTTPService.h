@@ -95,40 +95,40 @@ FOUNDATION_EXTERN NSString *const SBUserDataConfigureCompleteUserInfoKey;
 /// 请求类
 @interface YYRHTTPService (Request)
 
-/// 1. 使用须知：后台返回数据的保证为👇固定格式 且`data:{}`必须为`字典`或者`NSNull`;
-/// {
-///    code：0,
-///    msg: "",
-///    data:{
-///    }
-/// }
-/// 这个方法返回的 signal 将会 send `YYRHTTPResponse`这个实例，`parsedResult`就是对应键data对应的值， 如果你想获得里面的parsedResult实例，请使用以下方法
-/// [[self enqueueRequest:request resultClass:SBUser.class] sb_parsedResults];
-/// 这样取出来的就是 SBUser对象
+// 1. 使用须知：后台返回数据的保证为👇固定格式 且`data:{}`必须为`字典`或者`NSNull`;
+// {
+//    code：0,
+//    msg: "",
+//    data:{
+//    }
+// }
+// 这个方法返回的 signal 将会 send `YYRHTTPResponse`这个实例，`parsedResult`就是对应键data对应的值， 如果你想获得里面的parsedResult实例，请使用以下方法
+// [[self enqueueRequest:request resultClass:User.class] yyr_parsedResults];
+// 这样取出来的就是 SBUser对象
 
-/// 2.使用方法如下
+// 2.使用方法如下
 /*
- /// 1. 配置参数
- SBKeyedSubscript *subscript = [SBKeyedSubscript subscript];
+ // 1. 配置参数
+ YYRKeyedSubscript *subscript = [YYRKeyedSubscript subscript];
  subscript[@"page"] = @1;
  
  /// 2. 配置参数模型
- SBURLParameters *paramters = [SBURLParameters urlParametersWithMethod:@"GET" path:SUProduct parameters:subscript.dictionary];
+ YYRURLParameters *paramters = [YYRURLParameters urlParametersWithMethod:@"GET" path:SUProduct parameters:subscript.dictionary];
  
- /// 3. 创建请求
- /// 3.1 resultClass 传入对象必须得是 YYRObject的子类
- /// 3.2 resultClass 传入nil ，那么回调回来的值就是，服务器返回来的数据
+ // 3. 创建请求
+ // 3.1 resultClass 传入对象必须得是 YYRObject的子类
+ // 3.2 resultClass 传入nil ，那么回调回来的值就是，服务器返回来的数据
  [[[[YYRHTTPRequest requestWithParameters:paramters]
  enqueueResultClass:[SBGoodsData class]]
  sb_parsedResults]
  subscribeNext:^(SBGoodsData * goodsData) {
- /// 成功回调
+ // 成功回调
  
  } error:^(NSError *error) {
- /// 失败回调
+ // 失败回调
  
  } completed:^{
- /// 完成
+ // 完成
  
  }];
  
@@ -147,8 +147,8 @@ FOUNDATION_EXTERN NSString *const SBUserDataConfigureCompleteUserInfoKey;
  JSON object, then complete. If an error occurs at any point,
  the returned signal will send it immediately, then terminate.
  */
-- (RACSignal *)enqueueRequest:(YYRHTTPRequest *) request
-                 resultClass:(Class /*subclass of YYRObject*/) resultClass;
+- (RACSignal *)enqueueRequest:(YYRHTTPRequest *)request
+                 resultClass:(Class /*subclass of YYRObject*/)resultClass;
 
 
 /**

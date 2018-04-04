@@ -9,8 +9,8 @@
 #import "AppDelegate.h"
 #import "YYRMainTabBarController.h"
 //#import "YYRAccountLoginViewModel.h"
-//#import "YYRNewFeatureViewModel.h"
-//#import "YYRBootLoginViewModel.h"
+#import "YYRNewFeatureViewModel.h"
+#import "YYRBootLoginViewModel.h"
 
 @interface AppDelegate ()
 
@@ -45,6 +45,7 @@
     [self.window makeKeyAndVisible];
     
     // 初始化UI后配置
+    [self _configureApplication:application initialParamsAfterInitUI:launchOptions];
     
     // Save the application version info. must write last
     [[NSUserDefaults standardUserDefaults] setValue:YYR_APP_VERSION forKey:YYRApplicationVersionKey];
@@ -103,12 +104,20 @@
 #pragma mark - 创建根控制器
 - (YYRViewModel *)_createInitialViewModel {
     // The user has logged-in.
-    NSInteger login = 1;
-    if (login == 1) return [[YYRMainTabBarViewModel alloc] initWithServices:self.services params:nil];
+    NSInteger login = 2;
+    if (login == 1) {
+        return [[YYRMainTabBarViewModel alloc] initWithServices:self.services params:nil];
+    } else if (login == 2) {
+        return [[YYRBootLoginViewModel alloc] initWithServices:self.services params:nil];
+    } else if (login == 3) {
+        
+    } else {
+        
+    }
     NSString *version = [[NSUserDefaults standardUserDefaults] valueForKey:YYRApplicationVersionKey];
     /// 版本不一样就先走 新特性界面
     if (![version isEqualToString:YYR_APP_VERSION]) {
-        return NULL;
+        return nil;
 //        return [[MHNewFeatureViewModel alloc] initWithServices:self.services params:nil];
     } else {
          // 这里判断一下
@@ -123,8 +132,7 @@
 //             return [[MHAccountLoginViewModel alloc] initWithServices:self.services params:nil];
         } else {
             // 第一次使用微信
-            return nil;
-//            return [[MHBootLoginViewModel alloc] initWithServices:self.services params:nil];
+            return [[YYRBootLoginViewModel alloc] initWithServices:self.services params:nil];
         }
     }
 }

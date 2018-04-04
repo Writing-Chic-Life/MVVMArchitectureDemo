@@ -73,7 +73,7 @@ static id service_ = nil;
     });
     return service_;
 }
-+ (id)allocWithZone:(struct _NSZone *)zone{
++ (id)allocWithZone:(struct _NSZone *)zone {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         service_ = [super allocWithZone:zone];
@@ -208,7 +208,7 @@ static id service_ = nil;
 
 
 #pragma mark - Request
--(RACSignal *)enqueueRequest:(YYRHTTPRequest *)request resultClass:(Class /*subclass of YYRObject*/)resultClass {
+- (RACSignal *)enqueueRequest:(YYRHTTPRequest *)request resultClass:(Class /*subclass of YYRObject*/)resultClass {
     /// request 必须的有值
     if (!request) return [RACSignal error:[NSError errorWithDomain:YYRHTTPServiceErrorDomain code:-1 userInfo:nil]];
     
@@ -255,7 +255,8 @@ static id service_ = nil;
         }
         /// 获取请求任务
         __block NSURLSessionDataTask *task = nil;
-        task = [self dataTaskWithRequest:request completionHandler:^(NSURLResponse *response, NSDictionary * responseObject, NSError *error) {
+        task = [self dataTaskWithRequest:request uploadProgress:nil downloadProgress:nil
+                completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
             if (error) {
                 NSError *parseError = [self _errorFromRequestWithTask:task httpResponse:(NSHTTPURLResponse *)response responseObject:responseObject error:error];
                 [self HTTPRequestLog:task body:parameters error:parseError];
@@ -277,7 +278,7 @@ static id service_ = nil;
                     /// 打包成元祖 回调数据
                     [subscriber sendNext:RACTuplePack(response , responseObject)];
                     [subscriber sendCompleted];
-                }else{
+                } else {
                     if (statusCode == YYRHTTPResponseCodeNotLogin) {
                         /// 需要登录
                         //                        [self login:^{
@@ -301,7 +302,7 @@ static id service_ = nil;
                         //                            [self HTTPRequestLog:task body:parameters error:requestError];
                         //                            [subscriber sendError:requestError];
                         //                        }];
-                    }else{
+                    } else {
                         NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
                         userInfo[YYRHTTPServiceErrorResponseCodeKey] = @(statusCode);
                         NSString *msgTips = responseObject[YYRHTTPServiceResponseMsgKey];
@@ -375,7 +376,7 @@ static id service_ = nil;
             [formatter setDateFormat:@"yyyyMMddHHmmss"];
             NSString *dateString = [formatter stringFromDate:[NSDate date]];
             NSString *fileName = [NSString  stringWithFormat:@"senba_empty_%@_%zd.jpg", dateString , i];
-            [formData appendPartWithFileData:fileData name:name fileName:fileName mimeType:YYRStringIsNotEmpty(mimeType)?mimeType:@"application/octet-stream"];
+            [formData appendPartWithFileData:fileData name:name fileName:fileName mimeType:YYRStringIsNotEmpty(mimeType) ? mimeType : @"application/octet-stream"];
         }
     }]
              reduceEach:^RACStream *(NSURLResponse *response, NSDictionary * responseObject){
@@ -431,7 +432,7 @@ static id service_ = nil;
                     /// 打包成元祖 回调数据
                     [subscriber sendNext:RACTuplePack(response , responseObject)];
                     [subscriber sendCompleted];
-                }else{
+                } else {
                     
                     if (statusCode == YYRHTTPResponseCodeNotLogin) {
                         
@@ -455,7 +456,7 @@ static id service_ = nil;
                         //                            if (task.error != nil) userInfo[NSUnderlyingErrorKey] = task.error;
                         //                            [subscriber sendError:[NSError errorWithDomain:YYRHTTPServiceErrorDomain code:statusCode userInfo:userInfo]];
                         //                        }];
-                    }else{
+                    } else {
                         
                         NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
                         userInfo[YYRHTTPServiceErrorResponseCodeKey] = @(statusCode);
@@ -525,7 +526,7 @@ static id service_ = nil;
                 }
                 [subscriber sendNext:parsedObjects];
                 
-            }else{
+            } else {
                 /// 字典转模型
                 YYRObject *parsedObject = [resultClass yy_modelWithDictionary:JSONDictionary];
                 if (parsedObject == nil) {
@@ -549,7 +550,7 @@ static id service_ = nil;
             
             if (resultClass == nil) {
                 [subscriber sendNext:responseObject];
-            }else{
+            } else {
                 /// 数组 保证数组里面装的是同一种 NSDcitionary
                 for (NSDictionary *JSONDictionary in responseObject) {
                     if (![JSONDictionary isKindOfClass:NSDictionary.class]) {
@@ -601,9 +602,9 @@ static id service_ = nil;
     /// 3xx : 请求重定向[300  307]
     /// 4xx : 请求错误  [400  417] 、[422 426] 、449、451
     /// 5xx 、600: 服务器错误 [500 510] 、600
-    NSInteger httpFirstCode = HTTPCode/100;
-    if (httpFirstCode>0) {
-        if (httpFirstCode==4) {
+    NSInteger httpFirstCode = HTTPCode / 100;
+    if (httpFirstCode > 0) {
+        if (httpFirstCode == 4) {
             /// 请求出错了，请稍后重试
             if (HTTPCode == 408) {
 #if defined(DEBUG)||defined(_DEBUG)
@@ -611,14 +612,14 @@ static id service_ = nil;
 #else
                 errorDesc = @"请求超时，请稍后再试~";      /// 发布模式
 #endif
-            }else{
+            } else {
 #if defined(DEBUG)||defined(_DEBUG)
                 errorDesc = [NSString stringWithFormat:@"请求出错了，请稍后重试(%zd)~",HTTPCode];                   /// 调试模式
 #else
                 errorDesc = @"请求出错了，请稍后重试~";      /// 发布模式
 #endif
             }
-        }else if (httpFirstCode == 5 || httpFirstCode == 6){
+        } else if (httpFirstCode == 5 || httpFirstCode == 6){
             /// 服务器出错了，请稍后重试
 #if defined(DEBUG)||defined(_DEBUG)
             errorDesc = [NSString stringWithFormat:@"服务器出错了，请稍后重试(%zd)~",HTTPCode];                      /// 调试模式
@@ -626,12 +627,12 @@ static id service_ = nil;
             errorDesc = @"服务器出错了，请稍后重试~";       /// 发布模式
 #endif
             
-        }else if (!self.reachabilityManager.isReachable){
+        } else if (!self.reachabilityManager.isReachable) {
             /// 网络不给力，请检查网络
             errorDesc = @"网络开小差了，请稍后重试~";
         }
-    }else{
-        if (!self.reachabilityManager.isReachable){
+    } else {
+        if (!self.reachabilityManager.isReachable) {
             /// 网络不给力，请检查网络
             errorDesc = @"网络开小差了，请稍后重试~";
         }
@@ -754,7 +755,7 @@ static id service_ = nil;
     /// 获取带签名的参数
     NSString *sign = [self _signWithParameters:parameters];
     /// 赋值
-    parameters[YYRHTTPServiceSignKey] = [sign length]?sign:@"";
+    parameters[YYRHTTPServiceSignKey] = [sign length] ? sign : @"";
     /// 请求序列化
     AFHTTPRequestSerializer *requestSerializer = [AFHTTPRequestSerializer serializer];
     /// 配置请求头

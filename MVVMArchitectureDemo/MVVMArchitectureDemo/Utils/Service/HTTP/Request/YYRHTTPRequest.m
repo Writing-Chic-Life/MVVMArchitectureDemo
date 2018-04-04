@@ -37,7 +37,7 @@
 /// 网络服务层分类 方便YYRHTTPRequest 主动发起请求
 @implementation YYRHTTPRequest (YYRHTTPService)
 /// 请求数据
-- (RACSignal *) enqueueResultClass:(Class /*subclass of YYRObject*/) resultClass {
+- (RACSignal *)enqueueResultClass:(Class /*subclass of YYRObject*/)resultClass {
     return [[YYRHTTPService sharedInstance] enqueueRequest:self resultClass:resultClass];
 }
 @end

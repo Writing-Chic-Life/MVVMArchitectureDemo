@@ -11,24 +11,22 @@
 @interface UIButton (YYRAddition)
 
 /**
- * 快速创建一个没有图片的按钮
- */
-+ (nonnull instancetype)yyr_buttonWithTitle:(nonnull NSString *)title textColor:(nonnull UIColor *)color andSize:(CGFloat)fontsize;
-
-/**
  * 快速创建带有图片的按钮
  */
 + (nonnull instancetype)yyr_buttonWithTitle:(nonnull NSString *)title image:(nonnull UIImage *)normalImage andHighLight:(nonnull UIImage *)highLightImage;
 
++ (nonnull instancetype)yyr_buttonWithTitle:(nullable NSString *)title
+                                             fontSize:(CGFloat)fontSize
+                                            textColor:(nonnull UIColor *)textColor;
 /**
  实例化 UIButton
 
- @param title title
+ @param title 通过富文本设置的title
  @param fontSize fontSize
  @param textColor textColor
  @return UIButton
  */
-+ (nonnull instancetype)yyr_buttonWithTitle:(nullable NSString *)title
++ (nonnull instancetype)yyr_buttonWithAttributedTitle:(nullable NSString *)title
                                   fontSize:(CGFloat)fontSize
                                  textColor:(nonnull UIColor *)textColor;
 
@@ -68,7 +66,7 @@
 /**
  实例化 UIButton
 
- @param title title
+ @param title 通过富文本设置的title
  @param fontSize fontSize
  @param textColor textColor
  @param imageName imageName
@@ -76,7 +74,7 @@
  @param highlightSuffix highlightSuffix
  @return UIButton
  */
-+ (nonnull instancetype)yyr_buttonWithTitle:(nullable NSString *)title
++ (nonnull instancetype)yyr_buttonWithAttributedTitle:(nullable NSString *)title
                                   fontSize:(CGFloat)fontSize
                                  textColor:(nonnull UIColor *)textColor
                                  imageName:(nullable NSString *)imageName

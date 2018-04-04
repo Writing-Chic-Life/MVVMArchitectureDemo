@@ -25,6 +25,6 @@
 /// YYRHTTPService的分类
 @interface YYRHTTPRequest (YYRHTTPService)
 /// 入队
-- (RACSignal *) enqueueResultClass:(Class /*subclass of YYRObject*/) resultClass;
+- (RACSignal *)enqueueResultClass:(Class /*subclass of YYRObject*/)resultClass;
 
 @end

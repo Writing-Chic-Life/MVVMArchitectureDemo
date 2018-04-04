@@ -90,7 +90,7 @@
                    allowCrop:(BOOL)allowCrop
               selectedAssets:(NSArray *)selecatedAssets
                   completion:(void(^)(NSArray<UIImage *> *photos , NSArray *assets , BOOL isSelectOriginalPhoto ,NSArray<NSDictionary *> *infos))completion
-                      cancel:(void(^)())cancel;
+                      cancel:(void(^)(void))cancel;
 
 
 
@@ -111,7 +111,7 @@
        selectedPhotos:(NSMutableArray *)selectedPhotos
          currentIndex:(NSInteger)currentIndex
            completion:(void(^)(NSArray<UIImage *> *photos , NSArray *assets , BOOL isSelectOriginalPhoto ,NSArray<NSDictionary *> *infos))completion
-               cancel:(void(^)())cancel;
+               cancel:(void(^)(void))cancel;
 /**
  获取原图
  
@@ -127,7 +127,7 @@
 + (NSInteger)maxImagesCount;
 
 
-/// 细节处理 (开发者请不必关注)，控制器必须是 SBViewController 的子类
+/// 细节处理 (开发者请不必关注)，控制器必须是 YYRViewController 的子类
 + (BOOL)isSelectOriginalPhoto; /// 是否选中了原图
 + (void)configureSelectOriginalPhoto:(BOOL)selected; /// 配置选中了原图
 

@@ -22,11 +22,10 @@
 
 @implementation YYRHTTPResponse
 
-- (instancetype)initWithResponseObject:(id)responseObject parsedResult:(id)parsedResult
-{
+- (instancetype)initWithResponseObject:(id)responseObject parsedResult:(id)parsedResult {
     self = [super init];
     if (self) {
-        self.parsedResult = parsedResult ?:NSNull.null;
+        self.parsedResult = parsedResult ? : NSNull.null;
         self.code = [responseObject[YYRHTTPServiceResponseCodeKey] integerValue];
         self.msg = responseObject[YYRHTTPServiceResponseMsgKey];
     }

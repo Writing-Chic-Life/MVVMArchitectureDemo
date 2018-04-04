@@ -60,12 +60,12 @@
     self.divider2.hidden = NO;
     if (rows == 1) {                      /// 一段
         self.divider1.hidden = YES;
-    }else if(indexPath.row == 0) {        /// 首行
+    } else if (indexPath.row == 0) {        /// 首行
         self.divider2.hidden = YES;
-    }else if(indexPath.row == rows-1) {   /// 末行
+    } else if (indexPath.row == rows - 1) {   /// 末行
         self.divider1.hidden = YES;
         self.divider0.hidden = YES;
-    }else{ /// 中间行
+    } else { /// 中间行
         self.divider1.hidden = NO;
         self.divider0.hidden = YES;
         self.divider2.hidden = YES;
@@ -88,7 +88,7 @@
         self.centerLeftView.hidden = NO;
         self.centerLeftView.image = YYRImageNamed(viewModel.centerLeftViewName);
         self.centerLeftView.yyr_size = self.centerLeftView.image.size;
-    }else{
+    } else {
         self.centerLeftView.hidden = YES;;
     }
     
@@ -97,7 +97,7 @@
         self.centerRightView.hidden = NO;
         self.centerRightView.image = YYRImageNamed(viewModel.centerRightViewName);
         self.centerRightView.yyr_size = self.centerRightView.image.size;
-    }else{
+    } else {
         self.centerRightView.hidden = YES;;
     }
     
@@ -107,15 +107,15 @@
             YYRCommonAvatarItemViewModel *avatarViewModel = (YYRCommonAvatarItemViewModel *)viewModel;
             self.avatarView.hidden = NO;
             [self.avatarView yy_setImageWithURL:[NSURL URLWithString:avatarViewModel.avatar] placeholder:YYRWebAvatarImagePlaceholder() options:YYRWebImageOptionAutomatic completion:NULL];
-        }else if ([viewModel isKindOfClass:[YYRCommonQRCodeItemViewModel class]]){ // 二维码
+        } else if ([viewModel isKindOfClass:[YYRCommonQRCodeItemViewModel class]]) { // 二维码
             self.qrCodeView.hidden = NO;
         }
-    }else if([viewModel isKindOfClass:[YYRCommonSwitchItemViewModel class]]){ /// 开关
+    } else if ([viewModel isKindOfClass:[YYRCommonSwitchItemViewModel class]]) { /// 开关
         // 右边显示开关
         YYRCommonSwitchItemViewModel *switchViewModel = (YYRCommonSwitchItemViewModel *)viewModel;
         self.accessoryView = self.rightSwitch;
         self.rightSwitch.on = !switchViewModel.off;
-    }else{
+    } else {
         self.accessoryView = nil;
     }
 }

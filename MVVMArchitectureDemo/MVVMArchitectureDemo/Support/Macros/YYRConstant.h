@@ -98,8 +98,7 @@ static inline UIImage *YYRDefaultAvatar(YYRDefaultAvatarType type)
 }
 
 /// 配图的占位图片
-static inline UIImage *YYRPicturePlaceholder()
-{
+static inline UIImage *YYRPicturePlaceholder() {
     return [UIImage imageNamed:@"wx_timeline_image_placeholder"];
 }
 

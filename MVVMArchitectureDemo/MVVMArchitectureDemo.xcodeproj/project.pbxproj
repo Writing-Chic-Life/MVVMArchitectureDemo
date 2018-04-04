@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		020972834CCB79E810A3A8E6 /* libPods-MVVMArchitectureDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37637F704CE77010EE5B6094 /* libPods-MVVMArchitectureDemo.a */; };
+		19726AEE20745A1F00484E63 /* Zone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19726AED20745A1F00484E63 /* Zone.plist */; };
 		197DC2D22068CDDE002131F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC2D12068CDDE002131F0 /* AppDelegate.m */; };
-		197DC2D82068CDDE002131F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197DC2D62068CDDE002131F0 /* Main.storyboard */; };
 		197DC2DA2068CDDE002131F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 197DC2D92068CDDE002131F0 /* Assets.xcassets */; };
 		197DC2DD2068CDDE002131F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197DC2DB2068CDDE002131F0 /* LaunchScreen.storyboard */; };
 		197DC2E02068CDDE002131F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC2DF2068CDDE002131F0 /* main.m */; };
@@ -130,6 +130,9 @@
 		197DC4A72068FE03002131F0 /* UIViewController+PrivacyAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC4A52068FE03002131F0 /* UIViewController+PrivacyAlert.m */; };
 		197DC4AB2068FF5F002131F0 /* NSObject+YYRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC4A92068FF5E002131F0 /* NSObject+YYRAddition.m */; };
 		197DC4AC2068FF5F002131F0 /* UITableViewCell+Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC4AA2068FF5E002131F0 /* UITableViewCell+Alert.m */; };
+		197F5EAE20722CF3006193D2 /* YYRLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 197F5EAD20722CF3006193D2 /* YYRLoginViewController.m */; };
+		197F5EB120722D13006193D2 /* YYRLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 197F5EB020722D13006193D2 /* YYRLoginViewModel.m */; };
+		197F5EB420722DBC006193D2 /* YYRLoginPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 197F5EB320722DBC006193D2 /* YYRLoginPasswordView.m */; };
 		197F966F206A340A00FC842A /* YYRMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 197F966E206A340A00FC842A /* YYRMainTabBarController.m */; };
 		197F9672206A346E00FC842A /* YYRMainTabBarViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 197F9671206A346E00FC842A /* YYRMainTabBarViewModel.m */; };
 		197F967B206A36F600FC842A /* YYRContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 197F967A206A36F600FC842A /* YYRContactsViewController.m */; };
@@ -146,6 +149,17 @@
 		197F96A5206B7E7D00FC842A /* YYRHTTPService+Live.m in Sources */ = {isa = PBXBuildFile; fileRef = 197F96A4206B7E7D00FC842A /* YYRHTTPService+Live.m */; };
 		197F96A8206B831300FC842A /* YYRBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 197F96A7206B831300FC842A /* YYRBaseTableViewCell.m */; };
 		197F96AB206B842500FC842A /* YYRBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 197F96AA206B842500FC842A /* YYRBaseView.m */; };
+		19801063207311F20006F016 /* YYRLoginCaptchaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19801062207311F20006F016 /* YYRLoginCaptchaView.m */; };
+		198010662073120A0006F016 /* YYRAccountLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 198010652073120A0006F016 /* YYRAccountLoginView.m */; };
+		198010692073121F0006F016 /* YYRMobileLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 198010682073121F0006F016 /* YYRMobileLoginView.m */; };
+		1980106C20738CD00006F016 /* YYRZoneCodeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1980106B20738CD00006F016 /* YYRZoneCodeViewModel.m */; };
+		1980106F20738DBC0006F016 /* YYRZoneCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1980106E20738DBC0006F016 /* YYRZoneCodeViewController.m */; };
+		19DB07DA206E0E7F00F9976B /* YYRNewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DB07D9206E0E7F00F9976B /* YYRNewFeatureViewController.m */; };
+		19DB07DD206E0E9C00F9976B /* YYRNewFeatureViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DB07DC206E0E9C00F9976B /* YYRNewFeatureViewModel.m */; };
+		19DB07E0206E18FA00F9976B /* YYRLoginBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DB07DF206E18FA00F9976B /* YYRLoginBaseViewModel.m */; };
+		19DB07E3206E191300F9976B /* YYRLoginBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DB07E2206E191300F9976B /* YYRLoginBaseViewController.m */; };
+		19DB07E6206E1BA100F9976B /* YYRBootLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DB07E5206E1BA100F9976B /* YYRBootLoginViewController.m */; };
+		19DB07E9206E1BD900F9976B /* YYRBootLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DB07E8206E1BD900F9976B /* YYRBootLoginViewModel.m */; };
 		6DD87315EDC291745613AB01 /* libPods-MVVMArchitectureDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65859389699B527633BF67C7 /* libPods-MVVMArchitectureDemoUITests.a */; };
 		ECC1AB43200FBEA9912CE088 /* libPods-MVVMArchitectureDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0053E11E54A667265E0D271 /* libPods-MVVMArchitectureDemoTests.a */; };
 /* End PBXBuildFile section */
@@ -169,10 +183,10 @@
 
 /* Begin PBXFileReference section */
 		02FC5D39D9EA165A365E91E9 /* Pods-MVVMArchitectureDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMArchitectureDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMArchitectureDemoTests/Pods-MVVMArchitectureDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		19726AED20745A1F00484E63 /* Zone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Zone.plist; sourceTree = "<group>"; };
 		197DC2CD2068CDDE002131F0 /* MVVMArchitectureDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMArchitectureDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		197DC2D02068CDDE002131F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		197DC2D12068CDDE002131F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		197DC2D72068CDDE002131F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		197DC2D92068CDDE002131F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		197DC2DC2068CDDE002131F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		197DC2DE2068CDDE002131F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -423,6 +437,12 @@
 		197DC4A82068FF5E002131F0 /* NSObject+YYRAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYRAddition.h"; sourceTree = "<group>"; };
 		197DC4A92068FF5E002131F0 /* NSObject+YYRAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYRAddition.m"; sourceTree = "<group>"; };
 		197DC4AA2068FF5E002131F0 /* UITableViewCell+Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+Alert.m"; path = "../../../../../../ios/SISSAPP/APP/Tools/Category/UITableViewCell+Alert.m"; sourceTree = "<group>"; };
+		197F5EAC20722CF3006193D2 /* YYRLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRLoginViewController.h; sourceTree = "<group>"; };
+		197F5EAD20722CF3006193D2 /* YYRLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRLoginViewController.m; sourceTree = "<group>"; };
+		197F5EAF20722D13006193D2 /* YYRLoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRLoginViewModel.h; sourceTree = "<group>"; };
+		197F5EB020722D13006193D2 /* YYRLoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRLoginViewModel.m; sourceTree = "<group>"; };
+		197F5EB220722DBC006193D2 /* YYRLoginPasswordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRLoginPasswordView.h; sourceTree = "<group>"; };
+		197F5EB320722DBC006193D2 /* YYRLoginPasswordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRLoginPasswordView.m; sourceTree = "<group>"; };
 		197F96532069EE0400FC842A /* YYRExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYRExtension.h; sourceTree = "<group>"; };
 		197F966D206A340A00FC842A /* YYRMainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRMainTabBarController.h; sourceTree = "<group>"; };
 		197F966E206A340A00FC842A /* YYRMainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRMainTabBarController.m; sourceTree = "<group>"; };
@@ -456,6 +476,30 @@
 		197F96A7206B831300FC842A /* YYRBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRBaseTableViewCell.m; sourceTree = "<group>"; };
 		197F96A9206B842500FC842A /* YYRBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRBaseView.h; sourceTree = "<group>"; };
 		197F96AA206B842500FC842A /* YYRBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRBaseView.m; sourceTree = "<group>"; };
+		19801061207311F20006F016 /* YYRLoginCaptchaView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRLoginCaptchaView.h; sourceTree = "<group>"; };
+		19801062207311F20006F016 /* YYRLoginCaptchaView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRLoginCaptchaView.m; sourceTree = "<group>"; };
+		198010642073120A0006F016 /* YYRAccountLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRAccountLoginView.h; sourceTree = "<group>"; };
+		198010652073120A0006F016 /* YYRAccountLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRAccountLoginView.m; sourceTree = "<group>"; };
+		198010672073121F0006F016 /* YYRMobileLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRMobileLoginView.h; sourceTree = "<group>"; };
+		198010682073121F0006F016 /* YYRMobileLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRMobileLoginView.m; sourceTree = "<group>"; };
+		1980106A20738CD00006F016 /* YYRZoneCodeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRZoneCodeViewModel.h; sourceTree = "<group>"; };
+		1980106B20738CD00006F016 /* YYRZoneCodeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRZoneCodeViewModel.m; sourceTree = "<group>"; };
+		1980106D20738DBC0006F016 /* YYRZoneCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRZoneCodeViewController.h; sourceTree = "<group>"; };
+		1980106E20738DBC0006F016 /* YYRZoneCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRZoneCodeViewController.m; sourceTree = "<group>"; };
+		198D83C7206DDE5000F8DEDC /* YYRUtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRUtilsMacro.h; sourceTree = "<group>"; };
+		198D83C8206DDE9200F8DEDC /* YYRVendorMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRVendorMacro.h; sourceTree = "<group>"; };
+		19DB07D8206E0E7F00F9976B /* YYRNewFeatureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRNewFeatureViewController.h; sourceTree = "<group>"; };
+		19DB07D9206E0E7F00F9976B /* YYRNewFeatureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRNewFeatureViewController.m; sourceTree = "<group>"; };
+		19DB07DB206E0E9C00F9976B /* YYRNewFeatureViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRNewFeatureViewModel.h; sourceTree = "<group>"; };
+		19DB07DC206E0E9C00F9976B /* YYRNewFeatureViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRNewFeatureViewModel.m; sourceTree = "<group>"; };
+		19DB07DE206E18FA00F9976B /* YYRLoginBaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRLoginBaseViewModel.h; sourceTree = "<group>"; };
+		19DB07DF206E18FA00F9976B /* YYRLoginBaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRLoginBaseViewModel.m; sourceTree = "<group>"; };
+		19DB07E1206E191300F9976B /* YYRLoginBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRLoginBaseViewController.h; sourceTree = "<group>"; };
+		19DB07E2206E191300F9976B /* YYRLoginBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRLoginBaseViewController.m; sourceTree = "<group>"; };
+		19DB07E4206E1BA100F9976B /* YYRBootLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRBootLoginViewController.h; sourceTree = "<group>"; };
+		19DB07E5206E1BA100F9976B /* YYRBootLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRBootLoginViewController.m; sourceTree = "<group>"; };
+		19DB07E7206E1BD900F9976B /* YYRBootLoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYRBootLoginViewModel.h; sourceTree = "<group>"; };
+		19DB07E8206E1BD900F9976B /* YYRBootLoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYRBootLoginViewModel.m; sourceTree = "<group>"; };
 		37637F704CE77010EE5B6094 /* libPods-MVVMArchitectureDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVMArchitectureDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65859389699B527633BF67C7 /* libPods-MVVMArchitectureDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVMArchitectureDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		671819D567377139850F0F36 /* Pods-MVVMArchitectureDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMArchitectureDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMArchitectureDemo/Pods-MVVMArchitectureDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -523,13 +567,11 @@
 				197DC2D12068CDDE002131F0 /* AppDelegate.m */,
 				197DC30C2068CFE9002131F0 /* Class */,
 				197DC3D42068D010002131F0 /* Base */,
-				197DC3032068CFE9002131F0 /* Common */,
-				197DC30D2068CFE9002131F0 /* Custom */,
+				197DC3032068CFE9002131F0 /* Public */,
 				197DC30B2068CFE9002131F0 /* Resource */,
 				197DC3942068CFEA002131F0 /* Support */,
 				197DC30E2068CFE9002131F0 /* Utils */,
 				197DC3072068CFE9002131F0 /* Vendor */,
-				197DC2D62068CDDE002131F0 /* Main.storyboard */,
 				197DC2D92068CDDE002131F0 /* Assets.xcassets */,
 				197DC2DB2068CDDE002131F0 /* LaunchScreen.storyboard */,
 				197DC2DE2068CDDE002131F0 /* Info.plist */,
@@ -557,13 +599,13 @@
 			path = MVVMArchitectureDemoUITests;
 			sourceTree = "<group>";
 		};
-		197DC3032068CFE9002131F0 /* Common */ = {
+		197DC3032068CFE9002131F0 /* Public */ = {
 			isa = PBXGroup;
 			children = (
 				197DC3042068CFE9002131F0 /* YYRUser.h */,
 				197DC3052068CFE9002131F0 /* YYRUser.m */,
 			);
-			path = Common;
+			path = Public;
 			sourceTree = "<group>";
 		};
 		197DC3072068CFE9002131F0 /* Vendor */ = {
@@ -577,6 +619,7 @@
 		197DC30B2068CFE9002131F0 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				19726AED20745A1F00484E63 /* Zone.plist */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -584,6 +627,7 @@
 		197DC30C2068CFE9002131F0 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				19DB07CD206E0E3B00F9976B /* NewFeature */,
 				197F9663206A338900FC842A /* Main */,
 				197F9694206B44AD00FC842A /* Login */,
 				197F9668206A338900FC842A /* Home */,
@@ -592,13 +636,6 @@
 				197F9654206A338900FC842A /* Profile */,
 			);
 			path = Class;
-			sourceTree = "<group>";
-		};
-		197DC30D2068CFE9002131F0 /* Custom */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Custom;
 			sourceTree = "<group>";
 		};
 		197DC30E2068CFE9002131F0 /* Utils */ = {
@@ -1032,6 +1069,8 @@
 				197DC3982068CFEA002131F0 /* YYRConstEnum.h */,
 				197DC3992068CFEA002131F0 /* YYRConstInline.h */,
 				197DC39A2068CFEA002131F0 /* YYRMacros.h */,
+				198D83C8206DDE9200F8DEDC /* YYRVendorMacro.h */,
+				198D83C7206DDE5000F8DEDC /* YYRUtilsMacro.h */,
 				197DC39B2068CFEA002131F0 /* YYRURLConfigure.h */,
 			);
 			path = Macros;
@@ -1475,6 +1514,14 @@
 		197F9695206B44AD00FC842A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				19DB07E1206E191300F9976B /* YYRLoginBaseViewController.h */,
+				19DB07E2206E191300F9976B /* YYRLoginBaseViewController.m */,
+				19DB07E4206E1BA100F9976B /* YYRBootLoginViewController.h */,
+				19DB07E5206E1BA100F9976B /* YYRBootLoginViewController.m */,
+				197F5EAC20722CF3006193D2 /* YYRLoginViewController.h */,
+				197F5EAD20722CF3006193D2 /* YYRLoginViewController.m */,
+				1980106D20738DBC0006F016 /* YYRZoneCodeViewController.h */,
+				1980106E20738DBC0006F016 /* YYRZoneCodeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1489,6 +1536,14 @@
 		197F9697206B44AD00FC842A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				197F5EB220722DBC006193D2 /* YYRLoginPasswordView.h */,
+				197F5EB320722DBC006193D2 /* YYRLoginPasswordView.m */,
+				19801061207311F20006F016 /* YYRLoginCaptchaView.h */,
+				19801062207311F20006F016 /* YYRLoginCaptchaView.m */,
+				198010642073120A0006F016 /* YYRAccountLoginView.h */,
+				198010652073120A0006F016 /* YYRAccountLoginView.m */,
+				198010672073121F0006F016 /* YYRMobileLoginView.h */,
+				198010682073121F0006F016 /* YYRMobileLoginView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1496,6 +1551,14 @@
 		197F9698206B44AD00FC842A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				19DB07DE206E18FA00F9976B /* YYRLoginBaseViewModel.h */,
+				19DB07DF206E18FA00F9976B /* YYRLoginBaseViewModel.m */,
+				19DB07E7206E1BD900F9976B /* YYRBootLoginViewModel.h */,
+				19DB07E8206E1BD900F9976B /* YYRBootLoginViewModel.m */,
+				197F5EAF20722D13006193D2 /* YYRLoginViewModel.h */,
+				197F5EB020722D13006193D2 /* YYRLoginViewModel.m */,
+				1980106A20738CD00006F016 /* YYRZoneCodeViewModel.h */,
+				1980106B20738CD00006F016 /* YYRZoneCodeViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -1507,6 +1570,49 @@
 				197F96A4206B7E7D00FC842A /* YYRHTTPService+Live.m */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		19DB07CD206E0E3B00F9976B /* NewFeature */ = {
+			isa = PBXGroup;
+			children = (
+				19DB07CE206E0E3B00F9976B /* Controller */,
+				19DB07D1206E0E3B00F9976B /* Model */,
+				19DB07D2206E0E3B00F9976B /* View */,
+				19DB07D3206E0E3B00F9976B /* ViewModel */,
+			);
+			path = NewFeature;
+			sourceTree = "<group>";
+		};
+		19DB07CE206E0E3B00F9976B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				19DB07D8206E0E7F00F9976B /* YYRNewFeatureViewController.h */,
+				19DB07D9206E0E7F00F9976B /* YYRNewFeatureViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		19DB07D1206E0E3B00F9976B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		19DB07D2206E0E3B00F9976B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		19DB07D3206E0E3B00F9976B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				19DB07DB206E0E9C00F9976B /* YYRNewFeatureViewModel.h */,
+				19DB07DC206E0E9C00F9976B /* YYRNewFeatureViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		DC0EADBFCD68D5EE550B53B0 /* Pods */ = {
@@ -1647,10 +1753,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19726AEE20745A1F00484E63 /* Zone.plist in Resources */,
 				197DC2DD2068CDDE002131F0 /* LaunchScreen.storyboard in Resources */,
 				197DC3A72068CFEA002131F0 /* MBProgressHUD.bundle in Resources */,
 				197DC2DA2068CDDE002131F0 /* Assets.xcassets in Resources */,
-				197DC2D82068CDDE002131F0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1850,6 +1956,7 @@
 				197DC3FD2068D010002131F0 /* YYRTextField.m in Sources */,
 				197DC47E2068FB0A002131F0 /* NSDate+YYRAddition.m in Sources */,
 				197DC3B02068CFEA002131F0 /* NSString+YYRSize.m in Sources */,
+				19DB07E9206E1BD900F9976B /* YYRBootLoginViewModel.m in Sources */,
 				197DC3D02068CFEA002131F0 /* SAMKeychain+YYRUtil.m in Sources */,
 				197DC4952068FD32002131F0 /* UIScreen+YYRAddition.m in Sources */,
 				197DC4882068FB8F002131F0 /* UIButton+YYRAddition.m in Sources */,
@@ -1886,6 +1993,7 @@
 				197DC48C2068FBC9002131F0 /* UIColor+YYRAddition.m in Sources */,
 				197DC4592068E7CD002131F0 /* YYRCommonSwitchItemViewModel.m in Sources */,
 				197F96A8206B831300FC842A /* YYRBaseTableViewCell.m in Sources */,
+				1980106F20738DBC0006F016 /* YYRZoneCodeViewController.m in Sources */,
 				197DC4322068E183002131F0 /* YYFileHash.m in Sources */,
 				197DC3BB2068CFEA002131F0 /* UITextView+YYRExtension.m in Sources */,
 				197F9672206A346E00FC842A /* YYRMainTabBarViewModel.m in Sources */,
@@ -1893,6 +2001,7 @@
 				197DC3C92068CFEA002131F0 /* AFHTTPSessionManager+RACSupport.m in Sources */,
 				197DC4562068E792002131F0 /* YYRCommonValueItemViewModel.m in Sources */,
 				197DC4622068EBDB002131F0 /* YYRWebViewController.m in Sources */,
+				198010692073121F0006F016 /* YYRMobileLoginView.m in Sources */,
 				197DC4712068FA62002131F0 /* NSArray+YYRAddition.m in Sources */,
 				197F9684206A38C000FC842A /* YYRProfileViewModel.m in Sources */,
 				197DC3C52068CFEA002131F0 /* YYRFileManager.m in Sources */,
@@ -1903,14 +2012,19 @@
 				197F96A1206B779600FC842A /* YYRLiveRoom.m in Sources */,
 				197DC4332068E183002131F0 /* YYGestureRecognizer.m in Sources */,
 				197F9693206A3CD500FC842A /* YYRContactsViewModel.m in Sources */,
+				1980106C20738CD00006F016 /* YYRZoneCodeViewModel.m in Sources */,
 				197F9690206A3C2300FC842A /* YYRHomePageViewModel.m in Sources */,
 				197DC4A72068FE03002131F0 /* UIViewController+PrivacyAlert.m in Sources */,
 				197DC4352068E183002131F0 /* YYReachability.m in Sources */,
+				197F5EB420722DBC006193D2 /* YYRLoginPasswordView.m in Sources */,
 				197DC4052068D5CC002131F0 /* YYRTableViewController.m in Sources */,
 				197F966F206A340A00FC842A /* YYRMainTabBarController.m in Sources */,
 				197DC4682068EF4D002131F0 /* YYRCommonTableViewModel.m in Sources */,
+				19DB07E3206E191300F9976B /* YYRLoginBaseViewController.m in Sources */,
 				197F967E206A380F00FC842A /* YYRDiscoverViewController.m in Sources */,
+				19DB07DD206E0E9C00F9976B /* YYRNewFeatureViewModel.m in Sources */,
 				197DC3F62068D010002131F0 /* YYRObject.m in Sources */,
+				197F5EB120722D13006193D2 /* YYRLoginViewModel.m in Sources */,
 				197DC3AF2068CFEA002131F0 /* NSString+YYRExtension.m in Sources */,
 				197DC3BA2068CFEA002131F0 /* UITextField+YYRExtension.m in Sources */,
 				197DC4002068D010002131F0 /* YYRTabBarController.m in Sources */,
@@ -1919,6 +2033,7 @@
 				197DC3AB2068CFEA002131F0 /* NSError+YYRModelException.m in Sources */,
 				197DC3A32068CFEA002131F0 /* Foundation+Log.m in Sources */,
 				197DC3C22068CFEA002131F0 /* YYREmoticon.m in Sources */,
+				19DB07E6206E1BA100F9976B /* YYRBootLoginViewController.m in Sources */,
 				197DC3CD2068CFEA002131F0 /* YYRKeyedSubscript.m in Sources */,
 				197DC4722068FA62002131F0 /* NSNull+NullSafe.m in Sources */,
 				197DC2E02068CDDE002131F0 /* main.m in Sources */,
@@ -1932,13 +2047,16 @@
 				197DC4202068DD3D002131F0 /* YYRDebugTouchView.m in Sources */,
 				197DC4412068E5D2002131F0 /* YYRCommonGroupViewModel.m in Sources */,
 				197DC4442068E605002131F0 /* YYRCommonItemViewModel.m in Sources */,
+				19DB07DA206E0E7F00F9976B /* YYRNewFeatureViewController.m in Sources */,
 				197DC3B92068CFEA002131F0 /* UITableView+YYRExtension.m in Sources */,
 				197DC4372068E183002131F0 /* YYThreadSafeDictionary.m in Sources */,
 				197DC3AE2068CFEA002131F0 /* NSAttributedString+YYRSize.m in Sources */,
 				197DC4172068D874002131F0 /* YYRTabBarViewModel.m in Sources */,
 				197F9687206A38CE00FC842A /* YYRDiscoverViewModel.m in Sources */,
+				19DB07E0206E18FA00F9976B /* YYRLoginBaseViewModel.m in Sources */,
 				197F96AB206B842500FC842A /* YYRBaseView.m in Sources */,
 				197DC3BC2068CFEA002131F0 /* UIView+YYRExtension.m in Sources */,
+				198010662073120A0006F016 /* YYRAccountLoginView.m in Sources */,
 				197DC3B52068CFEA002131F0 /* UIImage+YYRExtension.m in Sources */,
 				197DC4652068ED94002131F0 /* YYRCommonTableViewController.m in Sources */,
 				197DC3B32068CFEA002131F0 /* UIBarButtonItem+YYRExtension.m in Sources */,
@@ -1949,8 +2067,10 @@
 				197DC3F72068D010002131F0 /* YYRReflection.m in Sources */,
 				197DC4022068D010002131F0 /* YYRViewModel.m in Sources */,
 				197DC4752068FA8D002131F0 /* NSAttributedString+YYRAddition.m in Sources */,
+				19801063207311F20006F016 /* YYRLoginCaptchaView.m in Sources */,
 				197DC3FC2068D010002131F0 /* YYRTableView.m in Sources */,
 				197DC3AA2068CFEA002131F0 /* NSError+YYRExtension.m in Sources */,
+				197F5EAE20722CF3006193D2 /* YYRLoginViewController.m in Sources */,
 				197DC3B22068CFEA002131F0 /* UIAlertController+YYRColor.m in Sources */,
 				197F969B206B75C800FC842A /* YYRHomePageTableViewCell.m in Sources */,
 				197DC3A92068CFEA002131F0 /* NSDateFormatter+YYRExtension.m in Sources */,
@@ -1998,14 +2118,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		197DC2D62068CDDE002131F0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				197DC2D72068CDDE002131F0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		197DC2DB2068CDDE002131F0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
