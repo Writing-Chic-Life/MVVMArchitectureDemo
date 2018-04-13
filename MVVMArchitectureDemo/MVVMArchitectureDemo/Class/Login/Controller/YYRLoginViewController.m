@@ -65,7 +65,7 @@
     /// 手机号
     RAC(self.viewModel, phone) = [RACSignal merge:@[RACObserve(self.mobileLoginView.phoneTextField, text), self.mobileLoginView.phoneTextField.rac_textSignal]];
     RAC(self.viewModel, zoneCode) = [RACSignal merge:@[RACObserve(self.mobileLoginView.zoneCodeTextField, text), self.mobileLoginView.zoneCodeTextField.rac_textSignal]];
-    RAC(self.viewModel, zoneName) = [RACSignal merge:@[RACObserve(self.mobileLoginView, zoneName)]];
+//    RAC(self.viewModel, zoneName) = [RACSignal merge:@[RACObserve(self.mobileLoginView, zoneName)]];
     
     /// 登录按钮有效性
     RAC(self.loginButton, enabled) = self.viewModel.validLoginSignal;

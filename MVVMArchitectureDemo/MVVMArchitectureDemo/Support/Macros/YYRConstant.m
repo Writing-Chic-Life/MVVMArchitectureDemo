@@ -29,7 +29,7 @@ NSUInteger const YYRNicknameMaxWords = 20;
 
 
 /// 简书首页地址
-NSString * const YYRMyBlogHomepageUrl = @"http://www.jianshu.com/u/126498da7523";
+NSString * const YYRMyBlogHomepageUrl = @"https://www.jianshu.com/u/0a1f631fd507";
 
 /// 国家区号
 NSString * const YYRMobileLoginZoneCodeKey = @"YYRMobileLoginZoneCodeKey";

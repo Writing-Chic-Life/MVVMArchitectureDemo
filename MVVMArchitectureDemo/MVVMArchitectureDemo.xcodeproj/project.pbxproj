@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		020972834CCB79E810A3A8E6 /* libPods-MVVMArchitectureDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37637F704CE77010EE5B6094 /* libPods-MVVMArchitectureDemo.a */; };
 		19726AEE20745A1F00484E63 /* Zone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19726AED20745A1F00484E63 /* Zone.plist */; };
+		1972AADF207B638A00111648 /* NSObject+logProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1972AADD207B638900111648 /* NSObject+logProperties.m */; };
 		197DC2D22068CDDE002131F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC2D12068CDDE002131F0 /* AppDelegate.m */; };
 		197DC2DA2068CDDE002131F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 197DC2D92068CDDE002131F0 /* Assets.xcassets */; };
 		197DC2DD2068CDDE002131F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197DC2DB2068CDDE002131F0 /* LaunchScreen.storyboard */; };
@@ -184,6 +185,8 @@
 /* Begin PBXFileReference section */
 		02FC5D39D9EA165A365E91E9 /* Pods-MVVMArchitectureDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMArchitectureDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMArchitectureDemoTests/Pods-MVVMArchitectureDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		19726AED20745A1F00484E63 /* Zone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Zone.plist; sourceTree = "<group>"; };
+		1972AADD207B638900111648 /* NSObject+logProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+logProperties.m"; sourceTree = "<group>"; };
+		1972AADE207B638900111648 /* NSObject+logProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+logProperties.h"; sourceTree = "<group>"; };
 		197DC2CD2068CDDE002131F0 /* MVVMArchitectureDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMArchitectureDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		197DC2D02068CDDE002131F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		197DC2D12068CDDE002131F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -751,6 +754,8 @@
 				197DC3272068CFE9002131F0 /* NSObject+YYR.h */,
 				197DC3282068CFE9002131F0 /* NSObject+YYRAlert.h */,
 				197DC3292068CFE9002131F0 /* NSObject+YYRAlert.m */,
+				1972AADE207B638900111648 /* NSObject+logProperties.h */,
+				1972AADD207B638900111648 /* NSObject+logProperties.m */,
 				197DC32A2068CFE9002131F0 /* NSObject+YYRExtension.h */,
 				197DC32B2068CFE9002131F0 /* NSObject+YYRExtension.m */,
 			);
@@ -2016,6 +2021,7 @@
 				197F9690206A3C2300FC842A /* YYRHomePageViewModel.m in Sources */,
 				197DC4A72068FE03002131F0 /* UIViewController+PrivacyAlert.m in Sources */,
 				197DC4352068E183002131F0 /* YYReachability.m in Sources */,
+				1972AADF207B638A00111648 /* NSObject+logProperties.m in Sources */,
 				197F5EB420722DBC006193D2 /* YYRLoginPasswordView.m in Sources */,
 				197DC4052068D5CC002131F0 /* YYRTableViewController.m in Sources */,
 				197F966F206A340A00FC842A /* YYRMainTabBarController.m in Sources */,

@@ -10,6 +10,7 @@
 #define NSObject_YYR_h
 
 #import "NSObject+YYRExtension.h"
+#import "NSObject+logProperties.h"
 #import "NSObject+YYRAlert.h"
 
 #endif /* NSObject_YYR_h */

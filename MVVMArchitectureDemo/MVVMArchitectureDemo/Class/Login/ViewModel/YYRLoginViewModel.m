@@ -48,17 +48,17 @@
         if (index.integerValue == 1) { // 找回密码
             NSURL *url = [NSURL URLWithString:YYRMyBlogHomepageUrl];
             NSURLRequest *request = [NSURLRequest requestWithURL:url];
-//            YYRWebViewModel * webViewModel = [[YYRWebViewModel alloc] initWithServices:self.services params:@{YYRViewModelRequestKey:request}];
-//            /// 去掉关闭按钮
-//            webViewModel.shouldDisableWebViewClose = YES;
-//            viewModel = webViewModel;
+            YYRWebViewModel * webViewModel = [[YYRWebViewModel alloc] initWithServices:self.services params:@{YYRViewModelRequestKey:request}];
+            /// 去掉关闭按钮
+            webViewModel.shouldDisableWebViewClose = YES;
+            viewModel = webViewModel;
         } else if (index.integerValue == 2) { // 前往微信安全中心
-//            NSURL *url = [NSURL URLWithString:MHMyBlogHomepageUrl];
-//            NSURLRequest *request = [NSURLRequest requestWithURL:url];
-//            MHWebViewModel * webViewModel = [[MHWebViewModel alloc] initWithServices:self.services params:@{MHViewModelRequestKey:request}];
-//            /// 去掉关闭按钮
-//            webViewModel.shouldDisableWebViewClose = YES;
-//            viewModel = webViewModel;
+            NSURL *url = [NSURL URLWithString:YYRMyBlogHomepageUrl];
+            NSURLRequest *request = [NSURLRequest requestWithURL:url];
+            YYRWebViewModel * webViewModel = [[YYRWebViewModel alloc] initWithServices:self.services params:@{YYRViewModelRequestKey:request}];
+            /// 去掉关闭按钮
+            webViewModel.shouldDisableWebViewClose = YES;
+            viewModel = webViewModel;
         }
         if (viewModel) [self.services presentViewModel:viewModel animated:YES completion:nil];
         return [RACSignal empty];
@@ -105,10 +105,14 @@
             self.zoneCode = viewModel.subtitle;
             self.zoneName = viewModel.title;
             
-//            // “手动触发self.dataSource的KVO”，必写。
-//            [self willChangeValueForKey:@"zoneCode"];
-//            // “手动触发self.now的KVO”，必写。
-//            [self didChangeValueForKey:@"zoneCode"];
+            // “手动触发self.dataSource的KVO”，必写。
+            [self willChangeValueForKey:@"zoneCode"];
+            // “手动触发self.now的KVO”，必写。
+            [self didChangeValueForKey:@"zoneCode"];
+            
+            [self willChangeValueForKey:@"zoneName"];
+            // “手动触发self.now的KVO”，必写。
+            [self didChangeValueForKey:@"zoneName"];
         };
         
         return [RACSignal empty];
